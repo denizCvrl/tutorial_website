@@ -15,7 +15,7 @@ Once again, the code that determines the type of widget and the order of appeara
 
 As you can see from the notes in __about.md__, author = "admin" uses information from `content/authors/`, in which you can find the "admin" folder. You have two files inside `content/authors/admin`: avatar.jpg and \_index.md. And now we have found what we are looking for! \_index.md is for the text part of the __about__ widget and avatar.jpg is for the image. 
 
-For your own website, you need to modify the information in \_index.md and save your own photo as avatar.jpg. Or, if you want, you can create a folder under `content/authors/`, name it whatever you want, let's say OWNER. Save your avatar.jpg, copy \_index.md and modify for yourself. Then, write author = "OWNER" in about.md.[^1]
+For your own website, you need to modify the information in \_index.md and save your own photo as avatar.jpg. Or, if you want, you can create a new folder under `content/authors/`, name it whatever you want, let's say OWNER. Save your avatar.jpg, copy \_index.md and modify for yourself. Then, write author = "OWNER" in about.md.[^1]
 
 
 ![](/img/13_about.png)
@@ -43,7 +43,7 @@ Remember Contact Details in params.toml (Lesson 4)? "These details power the Con
 
 If you decide to opt-out from being contacted via email, choose 0 in the email_form. The example website uses basic form_spree.io. The other option requires hosting your website via Netlify. We will talk about Netlify later.
 
-### skills.md, experience.md, accomplisments.md
+### skills.md, experience.md, accomplishments.md
 
 By now, you have probably learned how to read the .md files of widgets in `content/home/`. The next three files as they appear on the homepage are __skills.md__, __experience.md__ and __accomplishments.md__ which use FEATURETTE, EXPERIENCE and ACCOMPLISHMENTS widgets respectively. I think that modifying these widgets is pretty straightforward using the notes in each file, so I am not going over them here. If you do not want to use these widgets, just change _active_ from TRUE to FALSE or delete the .md files. 
 
@@ -53,7 +53,9 @@ The next on the webpage is __posts.md__ (once again, you can understand the orde
 
 ![](/img/15_pages.png)
 
-The PAGES widget gives you a chance to list some entries you have in other folders on the homepage. You might already have dedicated pages for those folders but it is nice to feature some of the entries on the homepage. `page_type` determines which folder it needs to look at under `content`. Accordingly, __posts.md__ and __talks.md__  go to the `content/post/` and `content/talk/` folders, respectively. Other parameters set the number of pages, filtering criteria, and design. For example, you can tag your posts according to their subjects (you will learn how very soon!). If you would like to show the posts about a certain topic you have tagged on your homepage, you can use filtering options. Try playing with the design options a bit by changing it from 2 to 1 or 3 and see how it looks :punch:.   
+The PAGES widget gives you a chance to list some entries you have in other folders on the homepage. You might already have dedicated pages for those folders but it is nice to feature some of the entries on the homepage. 
+
+`page_type` determines which folder it needs to look at under `content`. Accordingly, __posts.md__ and __talks.md__  go to the `content/post/` and `content/talk/` folders, respectively. Other parameters set the number of pages, filtering criteria, and design. For example, you can tag your posts according to their subjects. If you would like to show the posts about a certain topic you have tagged on your homepage, you can use filtering options. Try playing with the design options a bit by changing it from 2 to 1 or 3 and see how it looks :punch:.   
 
 ### projects.md
 
@@ -63,13 +65,19 @@ __projects.md__ uses the PORTFOLIO widget which is very similar to the PAGES wid
 
 ### Gallery Folder!
 
-The next section on the homepage is __Gallery__, but this part is actually hidden under Gallery folder, `content/home/gallery/`. This is another example for the BLANK widget (the other one was in demo.md). If you open index.md under the gallery folder, you will see that it is actually no different than other .md files, with the parameters widget, headless, active, and weight. At the bottom, it says that it uses the `gallery` element between curly brackets. I was like "What the heck does that mean?" :eyes:. Turns out that this is another built-in html design that is located at `themes/hugo-academic/layouts/shortcodes/`. It takes the photos from the subfolder `content/home/gallery/gallery/` and presents them in this widget. Just change _active_ from TRUE to FALSE or delete the folder if you do not want it. If you are preparing this website for a lab, I think it is fun to share some lab photos as a galery on the homepage :satisfied:. 
+The next section on the homepage is __Gallery__, but this part is actually hidden under Gallery folder, `content/home/gallery/`. This is another example for the BLANK widget (the other one was in demo.md). If you open index.md under the gallery folder, you will see that it is actually no different than other .md files, with the parameters widget, headless, active, and weight. 
+
+At the bottom, there is the `gallery` element between curly brackets. I was like "What the heck does that mean?" :eyes:. Turns out that this is another built-in html design that is located at `themes/hugo-academic/layouts/shortcodes/`. It takes the photos from the subfolder `content/home/gallery/gallery/` and presents them in this widget. 
+
+Just change _active_ from TRUE to FALSE or delete the folder if you do not want it. If you are preparing this website for a lab, I think it is fun to share some lab photos as a galery on the homepage :satisfied:. 
 
 ### featured.md and publications.md 
 
 We already covered __talks.md__, so the next two are __featured.md__ and __publications.md__.
 
-Both have page_type = publication. This means that they receive the information they show from `content/publication/`. However, __featured.md__ shows only "the featured = true in their front matters" (line 4). Does that make any sense to you? It didn’t make much sense to me until I saw the codes in `content/publication/`. There are 3 folders in `content/publication/`: conference-paper, journal-article and preprint. Each folder contains the papers you present under "Recent Publications".  Notice that each folder also has an index.md file with the parameter "featured". Only the index.md of the conference-paper folder has "featured = true". Therefore, you see only that paper under "Featured Publications" :wink:.  
+Both have page_type = publication. This means that they receive the information they show from `content/publication/`. However, __featured.md__ shows only "the featured = true in their front matters" (line 4). 
+
+Does that make any sense to you? It didn’t make much sense to me until I saw the codes in `content/publication/`. There are 3 folders in `content/publication/`: conference-paper, journal-article and preprint. Each folder contains the papers you present under "Recent Publications". Notice that each folder also has an index.md file with the parameter "featured". Only the index.md of the conference-paper folder has "featured = true". Therefore, you see only that paper under "Featured Publications" :wink:.  
 
 ![](/img/17_publication.png)
 
@@ -80,7 +88,6 @@ One more thing about __publications.md__: Have you noticed the alert note at the
 The final two widgets that appear on the homepage are __tags.md__ and __contact.md__ (we already covered contact.md). When you use tags for your posts, talks, and/or publications, you can present them here so people can reach these topics easily using widget = "tag_cloud"! You will learn how to create these tags in the next class. 
 
 Wait! There are two more files in `content/home/`: __slider.md__ and __people.md__. 
-
 
 ### slider.md 
 
@@ -124,5 +131,5 @@ In summary, your menu refers to PROJECTWIDGET folder which has projects.md, and 
 
 NEXT: OTHER FOLDERS UNDER `content/`.
 
-[^1]: Why would we need a separate folder? Let's assume you are preparing this website for a lab and you want to use ABOUT widget for your lab members. Then you can create multiple folders under `content/authors/`. Let's say ADMIN, MEMBER1, MEMBER2 with their own \_index.md files and avatars. Then you can have three separate files that use ABOUT widget: about1.md, about2.md, about3.md in `content/home/`. Each refers to different folder and you can arrange the order of appearance from the weight parameter. It doesn't have to be on the homepage. Do you want it to be in a separate page? Create a new folder under `content/` and refer it from your __menus.toml__. Don't forget to include index.md with type = "widget_page". If you don't know what I am talking about, go back to Bill Murray's entrance to the theatre in lesson 5 of this tutorial! It is up to you how to modify your website. The more you learn about widgets, the more creative you will be.]     
+[^1]: Why would we need a separate folder? Let's assume you are preparing this website for a lab and you want to use ABOUT widget for your lab members. Then you can create multiple folders under `content/authors/`. Let's say ADMIN, MEMBER1, MEMBER2 with their own \_index.md files and avatars. Then you can have three separate files that use ABOUT widget: about1.md, about2.md, about3.md in `content/home/`. Each refers to different folder and you can arrange the order of appearance from the weight parameter. It doesn't have to be on the homepage. Do you want it to be in a separate page? Create a new folder under `content/` and refer it from your __menus.toml__. Don't forget to include index.md with type = "widget_page". If you don't know what I am talking about, go back to Bill Murray's entrance to the theatre in lesson 5 of this tutorial to remember what index file is! Also see "Creating a New Widget Page" part of this lesson. The more you learn about widgets, the more creative you will be.     
 

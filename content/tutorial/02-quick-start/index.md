@@ -54,7 +54,7 @@ I find it incredibly frustrating to have so many files and not know what they ar
 
 - __themes folder__: This folder stores the codes to set up the theme of your website. We are using the __academic theme__. The config.toml and files in the config folder take the theme information from this __themes__ folder. __YOU WILL NOT CHANGE ANYTHING IN THIS FOLDER EVER! :no_entry: :boom:__
 
-Okay, we can now create the example website using another function from the blogdown package. Type the following function into the R console (By the way, do you remember why we need the package name in fron of a function? If not, see the previos lesson): 
+Okay, we can now create the example website using another function from the blogdown package. Type the following function into the R console (By the way, do you remember why we need the package name in front of a function? If not, see the previos lesson): 
 
 ```r
 blogdown::serve_site()
