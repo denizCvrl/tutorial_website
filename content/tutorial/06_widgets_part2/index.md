@@ -13,10 +13,19 @@ The next widget on the homepage is the __about__ widget. That's the part with th
 
 Once again, the code that determines the type of widget and the order of appearance is written between two "+++". The widget is active and we have "Biography" as a title. But where is the rest? :worried: Where is the part that includes the photo and the whole text under the title?! :cold_sweat: Don’t worry, it’s not supposed to be here – these parts of __about__ are kept somewhere else, but we can find them!
 
-As you can see from the notes in __about.md__, author = "admin" uses information from `content/authors/`, in which you can find the "admin" folder. You have two files inside `content/authors/admin`: avatar.jpg and \_index.md. And now we have found what we are looking for! \_index.md is for the text part of the __about__ widget and avatar.jpg is for the image. For your own website, you need to modify the information om \_index.md and save your own photo as avatar.jpg. Or, if you want, you can create a folder under `content/authors/`, name it whatever you want, let's say OWNER. Save your avatar.jpg, copy \_index.md and modify for yourself. Then, write author = "OWNER" in about.md.[^1]
+As you can see from the notes in __about.md__, author = "admin" uses information from `content/authors/`, in which you can find the "admin" folder. You have two files inside `content/authors/admin`: avatar.jpg and \_index.md. And now we have found what we are looking for! \_index.md is for the text part of the __about__ widget and avatar.jpg is for the image. 
+
+For your own website, you need to modify the information in \_index.md and save your own photo as avatar.jpg. Or, if you want, you can create a folder under `content/authors/`, name it whatever you want, let's say OWNER. Save your avatar.jpg, copy \_index.md and modify for yourself. Then, write author = "OWNER" in about.md.[^1]
 
 
 ![](/img/13_about.png)
+
+By the way, for those of you who don't know, Nelson Bighetti is a character known as Big Head in The Silicon Valley of HBO :joy:.
+
+<p align="center">
+<img src="https://media.giphy.com/media/3og0IMdYUfEyYOqIZW/giphy.gif">
+</p>
+
 
 Looking again at `content/authors/admin/`, I want to take your attention to the "social" part in \_index.md. The "fab" icon pack appears here again (we mentioned packs in Lesson 4), from which we get the icons and link them to the addresses of our own profiles in various social media websites.  
 
