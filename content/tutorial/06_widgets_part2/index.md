@@ -88,12 +88,11 @@ __slider.md__ uses the SLIDER widget but we cannot see it on the homepage becaus
 
 ### people.md 
 
-If you are preparing this website for a lab or an organization, you might want to introduce your team members. This is the widget you can use. Once again, make active = true and see how it appear on your example webpage.  
+If you are preparing this website for a lab or an organization, you might want to introduce your team members. This is the widget you can use. Once again, make active = true and see how it appears on your example webpage.  
 
-So, now you understand widgets. For your homepage, simply decide which widgets you want to use and set your parameters to determine how they are used. Turn “active” from TRUE to FALSE (or delete the files in the `content/home/` folder) and enter your content. Do you want to use them some widgets, but not all of them on the homepage? See the next lesson!
+For your homepage, simply decide which widgets you want to use and set your parameters to determine how they are used. Turn “active” from TRUE to FALSE (or delete the files in the `content/home/` folder) and enter your content.
 
-WIDGETS, UNDERSTOOD! HOMEPAGE, DONE! How about creating new widget pages? 
-
+WIDGETS, UNDERSTOOD! HOMEPAGE, DONE! 
 
 ### Creating a New Widget Page
 
@@ -108,13 +107,20 @@ Assume that you want to use a widget in a separate page, not on the homepage. Al
 <img src="/img/17_widgetpage.png">
 </p>
 
-You can create really cool pages with widgets. For example, I used blank widget (demo.md) below and deleted all of the text but title. Besides experience.md, I also added   accomplishments.md.
+You can create really cool pages with widgets. For example, I used blank widget (demo.md) below and deleted all of the text but title. Besides experience.md, I also added accomplishments.md.
 
 <p align="center">
 <img src="/img/17_widgetpage.gif">
 </p>
 
-How about widget pages for projects, publications? Similarly, create a separate folder in `content/` with its index.md file which has type = widget_page. Let's say the name of the this folder is PROJECTWIDGET. create a menu for this folder in the menu.toml. Copy(Cut)-and-paste the __projects.md__ file from the home folder. Remember that this file has page_type="project" (see above). It means that it lists the content of `content/project/`. In summary, your menu refers to PROJECTWIDGET folder which has projects.md, and projects.md uses files present in `content/project/`. They are all linked to each other!
+How about widget pages for projects, publications? 
+
+- Similarly, create a separate folder in `content/` with its index.md file which has type = widget_page. 
+- Let's say the name of the this folder is PROJECTWIDGET. Create a link for this folder in the menu.toml.
+- Copy(Cut)-and-paste the __projects.md__ file from the home folder. 
+- Remember that this file has page_type="project" (see above). It means that it lists the content of `content/project/`. 
+
+In summary, your menu refers to PROJECTWIDGET folder which has projects.md, and projects.md uses files present in `content/project/`. They are all linked to each other!
 
 NEXT: OTHER FOLDERS UNDER `content/`.
 
