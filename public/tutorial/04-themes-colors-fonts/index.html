@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Lesson 4 - Themes, Colors, Fonts - Making a Website with R and the Blogdown Package</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.cf61ee4b2512be758a62a9e3ecdd36ae306ccce0c3309bc3ac4b547e8475a418.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-stories">
+      <a href="/stories">
+        <span>Stories</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tutorial">
+      <a href="/tutorial">
+        <span>Tutorial</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img alt="Logo" src="/images/icon-512.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Logo" src="/images/icon-32.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-stories">
+      <a href="/stories">
+        <span>Stories</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tutorial">
+      <a href="/tutorial">
+        <span>Tutorial</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Tutorial</h4>
+  <ul>
+    
+    <li class="">
+      <a href="/tutorial/01-install-blogdown/">Lesson 1 - Install Blogdown</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/02-quick-start/">Lesson 2 - A Quick Start</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/03-menu/">Lesson 3 - Menu of Your Website</a>
+    </li>
+    
+    <li class="active ">
+      <a href="/tutorial/04-themes-colors-fonts/">Lesson 4 - Themes, Colors, Fonts</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/05_widgets_part1/">Lesson 5 - Widgets Part I</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/06_widgets_part2/">Lesson 6 - Widgets Part II</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/07_archetypes_part1/">Lesson 7 - Archetypes Part 1</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/08_archetypes_part2/">Lesson 8 - Archetypes Part 2</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/09_hints/">Lesson 9 - Some Hints</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/10_netlify/">Lesson 10 - Netlify</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/11_git_part1/">Lesson 11 - Git Part 1</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/12_git_part2/">Lesson 12 - Git Part 2</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/13_github/">Lesson 13 - GitHub</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+ <div class="article-container">
+<h1 class="title">Lesson 4 - Themes, Colors, Fonts</h1>
+<div class="content ">
+  <p>In the academic theme, you have the flexibility of creating your own color and font theme. Follow along to learn more. <strong>params.toml</strong> is like your make-up kit, but instead of blush and mascara, you have theme, color, font, fontsize, etc.😄</p>
+<h3 id="paramstoml">Params.toml</h3>
+<p>In the code below, I used dark as a theme and minimal as a font with font size L. There is also day/night mode. You can see  what it does by clicking moon icon from the menu.</p>
+<p><img src="/img/6_params.png" alt=""></p>
+<p>What is dark theme? Minimal font? Where are they coming from? There are some built-in themes stored in <code>themes/hugo-academic/data/themes/</code> and fonts in <code>themes/hugo-academic/data/fonts/</code>. The figure below shows the location of the folders. Remember that you are not supposed to change anything in this folder!!!</p>
+<p><img src="/img/6_theme_font.png" alt=""></p>
+<p>You might notice that there are two <code>themes</code> in the first folder path, which might seem confusing. The first <code>themes</code> refers to the main theme we are using for the website: section, menu, etc. Our main theme is hugo-academic. The second <code>themes</code> in the path is for a theme within the hugo-academic theme. You will find the codes of built-in themes and fonts in these folders. You can see what they look like here: <a href="https://sourcethemes.com/academic/themes/">https://sourcethemes.com/academic/themes/</a>. You can open one file from each folder to see what parameters are needed to create a theme and a font.</p>
+<p>For example, we have <strong>dark.toml</strong> file open in the figure below for the dark theme. All of those codes are for colors based on <a href="https://htmlcolorcodes.com/">html colors</a>. I am leaving it to you to google what color #fff is!</p>
+<p align="center">
+<img src="/img/7_colors.png">
+</p>
+<p>If you like one of the built-in themes, but want to simple touches like font or font-size, you can make many of these changes within <strong>params.toml</strong>, again from built-in options. Follow the instructions in <strong>params.toml</strong>.</p>
+<p>But what if you didn't like any of the built-in themes? Or maybe you want a font that is not available in the hugo-academic theme? No worries, you can make a custom  theme or font if you do not mind a little bit of coding. Let's walk through this process.(It is also nicely explained here: <a href="https://sourcethemes.com/academic/docs/customization/#custom-theme">https://sourcethemes.com/academic/docs/customization/#custom-theme</a>.)</p>
+<p>It has three steps:</p>
+<ol>
+<li>Creating a path: This is VERY, VERY important. If you want to change anything in the hugo-academic theme (or in any other theme), you should <strong>NOT</strong> make changes in the original folders, i.e. <code>themes/hugo-academic/data/themes/</code> or <code>themes/hugo-academic/data/fonts/</code>. You need to create new folders at the root of your directory (for me this is my COOLWeb folder), called <code>data/themes/</code> for color themes and <code>data/fonts/</code> for fonts. You can create these files by using New Folder option under Files. See the image below. Once again, pay attention to the path!</li>
+</ol>
+<p><img src="/img/8_custom_1.png" alt=""></p>
+<ol start="2">
+<li>Creating custom theme or font:</li>
+</ol>
+<ul>
+<li>
+<p>Themes: Copy the file of one of the built-in themes. Save it under <code>data/themes/</code> (avoid using spaces in filenames). Create your custom theme by deciding your colors from <a href="https://htmlcolorcodes.com/">html colors</a> and entering their codes to the parameters.</p>
+</li>
+<li>
+<p>Fonts: Create your custom font by following the steps at the webpage <a href="https://sourcethemes.com/academic/docs/customization/#custom-theme">https://sourcethemes.com/academic/docs/customization/#custom-theme</a>. Save it under <code>data/fonts/</code>  (avoid using spaces in filenames).</p>
+</li>
+</ul>
+<ol start="3">
+<li>Tell your website to use your custom theme and/or font by setting theme and font parameters in <code>config/_default/params.toml</code>. (See the figure, I names my custom theme and font: denizcolor and denizfont). For this tutorial, I kept the built-in themes <code>dark</code> and <code>minimal</code> but I hope that this brief instruction gives you a basic outline for customization of website aesthetics. If this is too much coding, just go with one of the built-in options 🕶.</li>
+</ol>
+<p align="center">
+<img src="/img/8_custom_3.png">
+</p>
+<p>This was the THEME section of <strong><code>config/_default/params.toml</code></strong>.</p>
+<p align="center">
+<img src="https://media.giphy.com/media/Ih7KOdwUzPACW8Njzu/giphy.gif">
+</p>
+<p>The rest of <strong>params.toml</strong> sets other parameters for the website. Let's look at each section one by one.</p>
+<p><strong>- Basic Info:</strong></p>
+<p align="center">
+<img src="/img/9_basicinfo.png">
+</p>
+<p>I changed only the description. If you are preparing this website for an organization or a lab, make the necessary changes.</p>
+<p>Notice that your name appears on the left upper corner of the website. If you would like to have a logo instead of your name, go ahead and save your logo in <code>static/img/</code> and refer the file in the logo option. You don't need to write the whole path, just logo = &ldquo;logo.png&rdquo;. Most of the people use their own photo as a logo so that you have your photo there. I am not sure if you can have both name and logo.</p>
+<p><strong>- Site Features:</strong></p>
+<p align="center">
+<img src="/img/10_sitefeatures.png">
+</p>
+<p>If you plan to share some programming code, including R code, in your website, you can decide how they appear by editing highlight_languages and highlight_style. This will enable the website to present programming code with text highlighting that distinguishes different parts of the code from one another. As it states in the <strong>params.toml</strong> document, be sure to check the availability from <a href="https://cdnjs.com/libraries/highlight.js/">https://cdnjs.com/libraries/highlight.js/</a>. For example, I added tex file, because I am planning to share some Latex code. You can find a demo of each supported style here: <a href="https://highlightjs.org/static/demo/">https://highlightjs.org/static/demo/</a>. I chose &ldquo;vs&rdquo; for this tutorial.</p>
+<p>If you would like to share some math formulas, equations or diagrams, you should tell R to render those kinds of code. You do not have to enable it for the whole website though. Later on, you will have front matters for other pages of your website. For example, if you remember from the previous lessons, <code>content/courses</code> created another page and you can enable math and diagram just for that page. If sharing math and diagram is not in your plans, then no worries 😉.</p>
+<p>Another key in the <strong>params.toml</strong> under Site Features is privacy_pack. It warns users about the use of cookies on your website when they visit your website for the first time. If they chose &ldquo;I got it&rdquo;, they never see that message agaiin because the website remembers them!! In order to better explain the function of privacy_pack, I have to jump towards the end of <strong>params.toml</strong> and talk a little bit about Comments and Marketing sections before the next section, Contacts Details. (By the way I don't know how edit_page works for now, so I simply disable it 😄.</p>
+<p align="center">
+<img src="/img/10_param_comments.png">
+</p>
+<p><strong>- Comments:</strong></p>
+<p>This is a static website so it doesn't change in response to user actions. If you want your webpage visitors to comment, there is an external resources! You can use websites like Disqus (<a href="https://disqus.com">https://disqus.com</a>) or Commento (<a href="https://commento.io)">https://commento.io)</a>. You need to create an account and enter its credential in this section in order to use these external resources. However, there external resources use cookies. There are good and bad sides of cookies. You can learn more about it <a href="https://www.cookiesandyou.com/about-cookies/">here</a>. I think  you also need to warn your visitors legally according to <a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">The General Data Protection Regulation (GDPR)</a> if there are cookies. Being on the right side, it is better to set privacy_pack true.</p>
+<p><strong>- Marketing:</strong></p>
+<p>This section is at the end of <strong>params_toml</strong>. If you would like to track your website traffic, you need to get an account and enter your credentials here. The other function of privacy_pack is to anonymize IP in Google Analytics (if enabled).</p>
+<p>Let's go back to the normal order: Contact Details!</p>
+<p align="center">
+<img src="/img/10_param_contact.png">
+</p>
+<p><strong>Contact Details:</strong></p>
+<p>See the note for this section: These details power the Contact widget (if enabled). It appears towards the end of the homepage. I will show you how to move it to another page other than homepage later. It doesn't where you show that widget, the information used comes from this section of <strong>param.toml</strong>. You can disable any of them by putting # in front of the respective line.</p>
+<p>Some more information about contact links options: I couldn't figure out where they are exactly (somewhere in the hugo-academic file, perhaps), but apparently there are four types of packs: fab, fas, far and ai which contain lots of icons. You can find what is available from <a href="https://sourcethemes.com/academic/zh/docs/page-builder/#icons">https://sourcethemes.com/academic/zh/docs/page-builder/#icons</a> if you would like to use something else that is not illustrated in the example website.</p>
+<p><strong>- Social:</strong></p>
+<p>Don't confuse this with the photo of your website. This photo is for your interactions in the social media and other websites when somebody shares your website. As instructed, save your avatar file, the photo you want to use on the homepage, under <code>static/img</code>. If you add your twitter account, whenever your site is shared on Twitter, your twitter account is also attached to the tweet 😉.</p>
+<p><strong>- Regional Settings:</strong></p>
+<p>This part is for regional settings about date and time. Change it accordingly.</p>
+<p><strong>- Advanced:</strong></p>
+<p>I like it when the menu is on the right, so I changed that in the “Main menu alignment” section.</p>
+<p>There is also show_logo option here. Remember your name or logo, appearing on the left upper corner? It is the link to go back to homepage if a visitor is in another page of your website. If you don't want it, then show_logo = false. In that case, I think it is better to have Home option in the menu. Its url should be the first WIDGET you have on your homepage. Once again, more about WIDGETS: Coming soon!</p>
+<p>If you know javascript or css, you can make some changes to the appearance of your website in this section using plugins_js and plugins_css, but thisit is not a topic of this tutorial. If you do make changes with these plugins, however, note that the logic is the same with the custom theme and font. Do NOT make changes in the original folders, i.e. <code>themes/hugo-academic/assets/css/</code> or <code>themes/hugo-academic/assets/js/</code>. You need to create new folders at the root of your side, called <code>assets/css/</code> for custom css files and <code>assets/js/</code> for custom js files.</p>
+<p>You can also decide how your publications and projects appear here. Once you understand the WIDGETS, you can come back and change these options.</p>
+<p><strong>- Search:</strong></p>
+<p>I kept everything as it is. Visitors will be able to search your website for keywords.</p>
+<p><strong>- Maps:</strong></p>
+<p>I personally prefer no map option, engine = 0. Notice that the address information here domes from the Contact Details section.</p>
+<p>NEXT LESSON: Finally, Widgets 👀 and how to change content.</p>
+
+</div>
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <center>
+<footer class="site-footer">
+  
+
+<p class="powered-by">
+    © Deniz Çivril, 2020 &middot; 
+
+    Made with <a href="https://github.com/denizCvrl" target="_blank" rel="noopener">GitHub</a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"> R </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the
+    <a href="https://themes.gohugo.io/hugo-whisper-theme/" target="_blank" rel="noopener">Whisper theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+  </p>
+</footer>
+<center>
+
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+
+</body>
+
+</html>

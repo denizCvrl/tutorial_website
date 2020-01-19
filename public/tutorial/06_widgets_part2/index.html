@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Lesson 6 - Widgets Part II - Making a Website with R and the Blogdown Package</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.cf61ee4b2512be758a62a9e3ecdd36ae306ccce0c3309bc3ac4b547e8475a418.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-stories">
+      <a href="/stories">
+        <span>Stories</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tutorial">
+      <a href="/tutorial">
+        <span>Tutorial</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img alt="Logo" src="/images/icon-512.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Logo" src="/images/icon-32.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-stories">
+      <a href="/stories">
+        <span>Stories</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tutorial">
+      <a href="/tutorial">
+        <span>Tutorial</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Tutorial</h4>
+  <ul>
+    
+    <li class="">
+      <a href="/tutorial/01-install-blogdown/">Lesson 1 - Install Blogdown</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/02-quick-start/">Lesson 2 - A Quick Start</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/03-menu/">Lesson 3 - Menu of Your Website</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/04-themes-colors-fonts/">Lesson 4 - Themes, Colors, Fonts</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/05_widgets_part1/">Lesson 5 - Widgets Part I</a>
+    </li>
+    
+    <li class="active ">
+      <a href="/tutorial/06_widgets_part2/">Lesson 6 - Widgets Part II</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/07_archetypes_part1/">Lesson 7 - Archetypes Part 1</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/08_archetypes_part2/">Lesson 8 - Archetypes Part 2</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/09_hints/">Lesson 9 - Some Hints</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/10_netlify/">Lesson 10 - Netlify</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/11_git_part1/">Lesson 11 - Git Part 1</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/12_git_part2/">Lesson 12 - Git Part 2</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/13_github/">Lesson 13 - GitHub</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+ <div class="article-container">
+<h1 class="title">Lesson 6 - Widgets Part II</h1>
+<div class="content ">
+  <p>More WIDGETS 🎯 In this lesson we will cover all the widgets that appear on the homepage of the example webpage. All you need to do is to decide which ones you would like on your own webpage. Then we conclude with how to create a new widget page.</p>
+<h3 id="aboutmd">about.md</h3>
+<p>The next widget on the homepage is the <strong>about</strong> widget. That's the part with the photo and the short biography on the webpage. The code is in <strong>about.md</strong> in <code>content/home/</code>.</p>
+<p>Once again, the code that determines the type of widget and the order of appearance is written between two &ldquo;+++&rdquo;. The widget is active and we have &ldquo;Biography&rdquo; as a title. But where is the rest? 😟 Where is the part that includes the photo and the whole text under the title?! 😰 Don’t worry, it’s not supposed to be here – these parts of <strong>about</strong> are kept somewhere else, but we can find them!</p>
+<p>As you can see from the notes in <strong>about.md</strong>, author = &ldquo;admin&rdquo; uses information from <code>content/authors/</code>, in which you can find the &ldquo;admin&rdquo; folder. You have two files inside <code>content/authors/admin</code>: avatar.jpg and _index.md. And now we have found what we are looking for! _index.md is for the text part of the <strong>about</strong> widget and avatar.jpg is for the image. For your own website, you need to modify the information om _index.md and save your own photo as avatar.jpg. Or, if you want, you can create a folder under <code>content/authors/</code>, name it whatever you want, let's say OWNER. Save your avatar.jpg, copy _index.md and modify for yourself. Then, write author = &ldquo;OWNER&rdquo; in about.md.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p><img src="/img/13_about.png" alt=""></p>
+<p>Looking again at <code>content/authors/admin/</code>, I want to take your attention to the &ldquo;social&rdquo; part in _index.md. The &ldquo;fab&rdquo; icon pack appears here again (we mentioned packs in Lesson 4), from which we get the icons and link them to the addresses of our own profiles in various social media websites.</p>
+<p>You migh notice the link for &ldquo;envelope&rdquo; is &lsquo;#contact&rsquo;. We have exactly the same logic that we had in the menus.toml file. The link goes to <strong>contact.md</strong> under <code>content/home/</code>. Why? Because it has # in front of it. Let’s take a closer look at how contact details are managed.</p>
+<h3 id="contactmd">contact.md</h3>
+<p>Open <strong>contact.md</strong> which locates at <code>content/home</code>. As you can understand from weight = 130, it appears toward the end of our homepage and, in fact, if you check the homepage, you see the form to send an email and other contact information. Once again, there is almost nothing in the code 😕.</p>
+<p align="center">
+<img src="/img/14_contact.png">
+</p>
+<p>Remember Contact Details in params.toml (Lesson 4)? &ldquo;These details power the Contact widget (if enabled)&quot;. You can enter your contact information there and, by choosing autolink = true, that information is added to <strong>contact.md</strong>. I know this might seem a bit confusing, but it provides efficient programming and a consistent output. Instead of entering the same information again and again in different locations (making it more difficult to change it all when you update your site), you simply enter the information in one location and call on that information for various sections of the site.</p>
+<p>If you decide to opt-out from being contacted via email, choose 0 in the email_form. The example website uses basic form_spree.io. The other option requires hosting your website via Netlify. We will talk about Netlify later.</p>
+<h3 id="skillsmd-experiencemd-accomplismentsmd">skills.md, experience.md, accomplisments.md</h3>
+<p>By now, you have probably learned how to read the .md files of widgets in <code>content/home/</code>. The next three files as they appear on the homepage are <strong>skills.md</strong>, <strong>experience.md</strong> and <strong>accomplishments.md</strong> which use FEATURETTE, EXPERIENCE and ACCOMPLISHMENTS widgets respectively. I think that modifying these widgets is pretty straightforward using the notes in each file, so I am not going over them here. If you do not want to use these widgets, just change <em>active</em> from TRUE to FALSE or delete the .md files.</p>
+<h3 id="postsmd-and-talksmd">posts.md and talks.md</h3>
+<p>The next on the webpage is <strong>posts.md</strong> (once again, you can understand the order from &ldquo;weight&rdquo; option), which uses the PAGES widget. Although <strong>talks.md</strong> appears later on the homepage, it also uses the PAGES widget. Go ahead and open both of those files so we can look at them together. You can drag one of them out of the RStudio window to see them side by side as I did below.</p>
+<p><img src="/img/15_pages.png" alt=""></p>
+<p>The PAGES widget gives you a chance to list some entries you have in other folders on the homepage. You might already have dedicated pages for those folders but it is nice to feature some of the entries on the homepage. <code>page_type</code> determines which folder it needs to look at under <code>content</code>. Accordingly, <strong>posts.md</strong> and <strong>talks.md</strong>  go to the <code>content/post/</code> and <code>content/talk/</code> folders, respectively. Other parameters set the number of pages, filtering criteria, and design. For example, you can tag your posts according to their subjects (you will learn how very soon!). If you would like to show the posts about a certain topic you have tagged on your homepage, you can use filtering options. Try playing with the design options a bit by changing it from 2 to 1 or 3 and see how it looks 👊.</p>
+<h3 id="projectsmd">projects.md</h3>
+<p><strong>projects.md</strong> uses the PORTFOLIO widget which is very similar to the PAGES widget. One additional feature here is the filtering toolbar. When you enter your projects, you can tag them (coming soon!) and use these tags to filter them. The example website shows how these filters can be displayed (see the image below).</p>
+<p><img src="/img/16_portfolio.png" alt=""></p>
+<h3 id="gallery-folder">Gallery Folder!</h3>
+<p>The next section on the homepage is <strong>Gallery</strong>, but this part is actually hidden under Gallery folder, <code>content/home/gallery/</code>. This is another example for the BLANK widget (the other one was in demo.md). If you open index.md under the gallery folder, you will see that it is actually no different than other .md files, with the parameters widget, headless, active, and weight. At the bottom, it says that it uses the <code>gallery</code> element between curly brackets. I was like &ldquo;What the heck does that mean?&rdquo; 👀. Turns out that this is another built-in html design that is located at <code>themes/hugo-academic/layouts/shortcodes/</code>. It takes the photos from the subfolder <code>content/home/gallery/gallery/</code> and presents them in this widget. Just change <em>active</em> from TRUE to FALSE or delete the folder if you do not want it. If you are preparing this website for a lab, I think it is fun to share some lab photos as a galery on the homepage 😆.</p>
+<h3 id="featuredmd-and-publicationsmd">featured.md and publications.md</h3>
+<p>We already covered <strong>talks.md</strong>, so the next two are <strong>featured.md</strong> and <strong>publications.md</strong>.</p>
+<p>Both have page_type = publication. This means that they receive the information they show from <code>content/publication/</code>. However, <strong>featured.md</strong> shows only &ldquo;the featured = true in their front matters&rdquo; (line 4). Does that make any sense to you? It didn’t make much sense to me until I saw the codes in <code>content/publication/</code>. There are 3 folders in <code>content/publication/</code>: conference-paper, journal-article and preprint. Each folder contains the papers you present under &ldquo;Recent Publications&rdquo;.  Notice that each folder also has an index.md file with the parameter &ldquo;featured&rdquo;. Only the index.md of the conference-paper folder has &ldquo;featured = true&rdquo;. Therefore, you see only that paper under &ldquo;Featured Publications&rdquo; 😉.</p>
+<p><img src="/img/17_publication.png" alt=""></p>
+<p>One more thing about <strong>publications.md</strong>: Have you noticed the alert note at the end? It states: &ldquo;Quickly discover relevant content by filtering publications&rdquo;. We had an alert note in demo.md too. Similar to the gallery element, the alert note is also written between two curly brackets. Even though you do not necessarily know coding in html, you can just copy-and-paste the codes, change the content and use in another index.md file.</p>
+<h3 id="tagsmd">tags.md</h3>
+<p>The final two widgets that appear on the homepage are <strong>tags.md</strong> and <strong>contact.md</strong> (we already covered contact.md). When you use tags for your posts, talks, and/or publications, you can present them here so people can reach these topics easily using widget = &ldquo;tag_cloud&rdquo;! You will learn how to create these tags in the next class.</p>
+<p>Wait! There are two more files in <code>content/home/</code>: <strong>slider.md</strong> and <strong>people.md</strong>.</p>
+<h3 id="slidermd">slider.md</h3>
+<p><strong>slider.md</strong> uses the SLIDER widget but we cannot see it on the homepage because active = false. Make it TRUE. It will appear at the top of your page because weight = 1. It is an animated slider. I think it might be very useful if you have some announcements and want your webpage visitors to see them at the top.</p>
+<h3 id="peoplemd">people.md</h3>
+<p>If you are preparing this website for a lab or an organization, you might want to introduce your team members. This is the widget you can use. Once again, make active = true and see how it appear on your example webpage.</p>
+<p>So, now you understand widgets. For your homepage, simply decide which widgets you want to use and set your parameters to determine how they are used. Turn “active” from TRUE to FALSE (or delete the files in the <code>content/home/</code> folder) and enter your content. Do you want to use them some widgets, but not all of them on the homepage? See the next lesson!</p>
+<p>WIDGETS, UNDERSTOOD! HOMEPAGE, DONE! How about creating new widget pages?</p>
+<h3 id="creating-a-new-widget-page">Creating a New Widget Page</h3>
+<p>Assume that you want to use a widget in a separate page, not on the homepage. All you need to do is to declare that your page will be a widget page in the front matter of an index.md. Let's try.</p>
+<ol>
+<li>Create a new folder in the <code>content/</code> folder: I named mine EXPERIENCE.</li>
+<li>Create a new file, <code>File-&gt; New File -&gt; Text File</code>, and  save it as <code>index.md</code>. Copy(Cut)-and-paste experience.md from the home folder to the EXPERIENCE folder.</li>
+<li>In the index.md file, declare that this page is a widget_page.</li>
+<li>Don't forget to create an item in <code>menu.toml</code>.</li>
+</ol>
+<p align="center">
+<img src="/img/17_widgetpage.png">
+</p>
+<p>You can create really cool pages with widgets. For example, I used blank widget (demo.md) below and deleted all of the text but title. Besides experience.md, I also added   accomplishments.md.</p>
+<p align="center">
+<img src="/img/17_widgetpage.gif">
+</p>
+<p>How about widget pages for projects, publications? Similarly, create a separate folder in <code>content/</code> with its index.md file which has type = widget_page. Let's say the name of the this folder is PROJECTWIDGET. create a menu for this folder in the menu.toml. Copy(Cut)-and-paste the <strong>projects.md</strong> file from the home folder. Remember that this file has page_type=&quot;project&rdquo; (see above). It means that it lists the content of <code>content/project/</code>. In summary, your menu refers to PROJECTWIDGET folder which has projects.md, and projects.md uses files present in <code>content/project/</code>. They are all linked to each other!</p>
+<p>NEXT: OTHER FOLDERS UNDER <code>content/</code>.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Why would we need a separate folder? Let's assume you are preparing this website for a lab and you want to use ABOUT widget for your lab members. Then you can create multiple folders under <code>content/authors/</code>. Let's say ADMIN, MEMBER1, MEMBER2 with their own _index.md files and avatars. Then you can have three separate files that use ABOUT widget: about1.md, about2.md, about3.md in <code>content/home/</code>. Each refers to different folder and you can arrange the order of appearance from the weight parameter. It doesn't have to be on the homepage. Do you want it to be in a separate page? Create a new folder under <code>content/</code> and refer it from your <strong>menus.toml</strong>. Don't forget to include index.md with type = &ldquo;widget_page&rdquo;. If you don't know what I am talking about, go back to Bill Murray's entrance to the theatre in lesson 5 of this tutorial! It is up to you how to modify your website. The more you learn about widgets, the more creative you will be.] <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+</div>
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <center>
+<footer class="site-footer">
+  
+
+<p class="powered-by">
+    © Deniz Çivril, 2020 &middot; 
+
+    Made with <a href="https://github.com/denizCvrl" target="_blank" rel="noopener">GitHub</a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"> R </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the
+    <a href="https://themes.gohugo.io/hugo-whisper-theme/" target="_blank" rel="noopener">Whisper theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+  </p>
+</footer>
+<center>
+
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+
+</body>
+
+</html>

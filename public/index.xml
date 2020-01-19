@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Making a Website with R and the Blogdown Package: Step-by-Step on Making a Website with R and the Blogdown Package</title>
+    <link>/</link>
+    <description>Recent content in Making a Website with R and the Blogdown Package: Step-by-Step on Making a Website with R and the Blogdown Package</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Deniz Çivril, {year}</copyright>
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deniz Çivril</title>
+      <link>/stories/01-deniz-civril/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/stories/01-deniz-civril/</guid>
+      <description>Coming Soon!</description>
+    </item>
+    
+    <item>
+      <title>Lesson 1 - Install Blogdown</title>
+      <link>/tutorial/01-install-blogdown/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/01-install-blogdown/</guid>
+      <description>You need both R and RStudio IDE. R is a programming language for statistical computing and graphics while R Studio is an integrated development environment (IDE) that provides a user-friendly platform.</description>
+    </item>
+    
+    <item>
+      <title>Clinton Merck</title>
+      <link>/stories/02-clinton-merck/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/stories/02-clinton-merck/</guid>
+      <description>Clint&#39;s own experience</description>
+    </item>
+    
+    <item>
+      <title>Lesson 2 - A Quick Start</title>
+      <link>/tutorial/02-quick-start/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/02-quick-start/</guid>
+      <description>In this lesson, you will build the example site of the academic theme. Later, we will modify the elements of this website. Our aim is to teach you the structure of folders so that you can apply a similar logic while using other themes.</description>
+    </item>
+    
+    <item>
+      <title>Lesson 3 - Menu of Your Website</title>
+      <link>/tutorial/03-menu/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/03-menu/</guid>
+      <description>In this lesson, there is a short discussion of &amp;ldquo;projects&amp;rdquo; in R. Then, we will be back to working on the website to learn how to create the menu of your website.</description>
+    </item>
+    
+    <item>
+      <title>Lesson 4 - Themes, Colors, Fonts</title>
+      <link>/tutorial/04-themes-colors-fonts/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/04-themes-colors-fonts/</guid>
+      <description>In the academic theme, you have the flexibility of creating your own color and font theme. Follow along to learn more. params.toml is like your make-up kit, but instead of blush and mascara, you have theme, color, font, fontsize, etc.</description>
+    </item>
+    
+    <item>
+      <title>Lesson 5 - Widgets Part I</title>
+      <link>/tutorial/05_widgets_part1/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/05_widgets_part1/</guid>
+      <description>WIDGETS 🎯 are built-in designs for your website. Not every theme has widgets, but the academic theme has lots of them. We will look at them one by one and discuss how you can modify them in your website.</description>
+    </item>
+    
+    <item>
+      <title>Lesson 6 - Widgets Part II</title>
+      <link>/tutorial/06_widgets_part2/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/06_widgets_part2/</guid>
+      <description>More WIDGETS 🎯 In this lesson we will cover all the widgets that appear on the homepage of the example webpage. All you need to do is to decide which ones you would like on your own webpage.</description>
+    </item>
+    
+    <item>
+      <title>Lesson 7 - Archetypes Part 1</title>
+      <link>/tutorial/07_archetypes_part1/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/07_archetypes_part1/</guid>
+      <description>Coming Soon!</description>
+    </item>
+    
+    <item>
+      <title>Lesson 8 - Archetypes Part 2</title>
+      <link>/tutorial/08_archetypes_part2/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/08_archetypes_part2/</guid>
+      <description>Coming Soon!</description>
+    </item>
+    
+    <item>
+      <title>Lesson 9 - Some Hints</title>
+      <link>/tutorial/09_hints/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/09_hints/</guid>
+      <description>Coming Soon!</description>
+    </item>
+    
+    <item>
+      <title>Lesson 10 - Netlify</title>
+      <link>/tutorial/10_netlify/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/10_netlify/</guid>
+      <description>Coming Soon!</description>
+    </item>
+    
+    <item>
+      <title>Lesson 11 - Git Part 1</title>
+      <link>/tutorial/11_git_part1/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/11_git_part1/</guid>
+      <description>Coming Soon!</description>
+    </item>
+    
+    <item>
+      <title>Lesson 12 - Git Part 2</title>
+      <link>/tutorial/12_git_part2/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/12_git_part2/</guid>
+      <description>Coming Soon!</description>
+    </item>
+    
+    <item>
+      <title>Lesson 13 - GitHub</title>
+      <link>/tutorial/13_github/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/tutorial/13_github/</guid>
+      <description>Coming Soon!</description>
+    </item>
+    
+  </channel>
+</rss>

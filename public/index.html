@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.62.0" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Making a Website with R and the Blogdown Package</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<meta name="description" content="Making a Website with R and the Blogdown Package" />
+<meta property="og:title" content="Making a Website with R and the Blogdown Package" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://makingwebsiteswithr.netlify.com" />
+<meta property="og:image" content="" />
+<meta property="og:description" content="Making a Website with R and the Blogdown Package" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@denizCvrl" />
+<meta name="twitter:creator" content="@denizCvrl" />
+
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.cf61ee4b2512be758a62a9e3ecdd36ae306ccce0c3309bc3ac4b547e8475a418.css">
+  
+
+  
+
+</head>
+
+<body class='page page-home'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home active">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-stories">
+      <a href="/stories">
+        <span>Stories</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tutorial">
+      <a href="/tutorial">
+        <span>Tutorial</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img alt="Logo" src="/images/icon-512.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Logo" src="/images/icon-32.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home active">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-stories">
+      <a href="/stories">
+        <span>Stories</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tutorial">
+      <a href="/tutorial">
+        <span>Tutorial</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+<div class="strip">
+  <div class="container pt-4 pb-16">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="title">Making a Website with R and the Blogdown Package: Step-by-Step</h1>
+        <div class="content">
+          
+          <h3 id="by-deniz-ivril-and-clinton-merck">by Deniz Çivril and Clinton Merck</h3>
+<p>Do you set a goal of learning R? Has it been ages since you set that goal? You are not alone! It is not easy to start working with a new programming language. It is foreign territory from A-to-Z! Getting started can be a daunting task.</p>
+<p>The aim of this tutorial is to give you an excuse to get familiar with some R basics such as Rstudio environment, Rmarkdown, and GitHub while preparing your very own website! If you already know a little, that's perfect. If you don't know anything, give it a try! The tutorial is streamlined – it only covers what you need to know in order to create a website (which is about all that we know ourselves!).</p>
+<p>We try to introduce tools as you need them (like GitHub) without getting too caught up in the extensive jargon of R programming. In other words, this tutorial is for newbies to R (like us). However, early/intermediate R users can also find some useful information about modifying their websites. Just follow the lessons and, hopefully, you will be as excited to continue with your R journey as we are!</p>
+<p><center>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Knowing so little never felt so fun. <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://t.co/Y51lLVeuCD">pic.twitter.com/Y51lLVeuCD</a></p>&mdash; Allison Horst (@allison_horst) <a href="https://twitter.com/allison_horst/status/1202229050284003328?ref_src=twsrc%5Etfw">December 4, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</center></p>
+<p>Please note: We are not teaching data analysis in R. You absolutely need a different tutorial for that. We believe that preparing your website is a nice motive to start playing around with R and RStudio environment.</p>
+<p><strong>Before we start, here are some tips for resolving issues in R (issues can and will arise, but these solutions can often get you back to where you need to be):</strong></p>
+<p>When an issue comes up or something’s not right, always restart your R session. It does wonders for solving problems. You can just close and reopen R or use the shortcuts -&gt; cmd + shift + F10 for Mac and ctrl + shift + F10 for Windows.</p>
+<p>The Internet is your friend. Ask a search engine about your problem, copy-and-paste warning notes, join forums, etc.</p>
+<p>Delete the <code>public</code> folder and build your website again! This tip will make sense after you learn what the <code>public</code> folder is 😉.</p>
+
+          
+        </div>
+        <a class="button button-primary mb-2" href="/tutorial">
+          Start the tutorial
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    
+  </div>
+
+  <center>
+<footer class="site-footer">
+  
+
+<p class="powered-by">
+    © Deniz Çivril, 2020 &middot; 
+
+    Made with <a href="https://github.com/denizCvrl" target="_blank" rel="noopener">GitHub</a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"> R </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the
+    <a href="https://themes.gohugo.io/hugo-whisper-theme/" target="_blank" rel="noopener">Whisper theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+  </p>
+</footer>
+<center>
+
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+
+</body>
+
+</html>

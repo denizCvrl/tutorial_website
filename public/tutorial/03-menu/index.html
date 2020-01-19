@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Lesson 3 - Menu of Your Website - Making a Website with R and the Blogdown Package</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.cf61ee4b2512be758a62a9e3ecdd36ae306ccce0c3309bc3ac4b547e8475a418.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-stories">
+      <a href="/stories">
+        <span>Stories</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tutorial">
+      <a href="/tutorial">
+        <span>Tutorial</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img alt="Logo" src="/images/icon-512.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Logo" src="/images/icon-32.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-stories">
+      <a href="/stories">
+        <span>Stories</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tutorial">
+      <a href="/tutorial">
+        <span>Tutorial</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Tutorial</h4>
+  <ul>
+    
+    <li class="">
+      <a href="/tutorial/01-install-blogdown/">Lesson 1 - Install Blogdown</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/02-quick-start/">Lesson 2 - A Quick Start</a>
+    </li>
+    
+    <li class="active ">
+      <a href="/tutorial/03-menu/">Lesson 3 - Menu of Your Website</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/04-themes-colors-fonts/">Lesson 4 - Themes, Colors, Fonts</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/05_widgets_part1/">Lesson 5 - Widgets Part I</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/06_widgets_part2/">Lesson 6 - Widgets Part II</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/07_archetypes_part1/">Lesson 7 - Archetypes Part 1</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/08_archetypes_part2/">Lesson 8 - Archetypes Part 2</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/09_hints/">Lesson 9 - Some Hints</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/10_netlify/">Lesson 10 - Netlify</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/11_git_part1/">Lesson 11 - Git Part 1</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/12_git_part2/">Lesson 12 - Git Part 2</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/13_github/">Lesson 13 - GitHub</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+ <div class="article-container">
+<h1 class="title">Lesson 3 - Menu of Your Website</h1>
+<div class="content ">
+  <p>In this lesson, there is a short discussion of &ldquo;projects&rdquo; in R. Then, we will be back to working on the website to learn how to create the menu of your website.</p>
+<h3 id="projects-in-r">Projects in R</h3>
+<p>Sooo, in the last tutorial we had all those files open and we were working on them. Do we have to open them one by one again? Nah!</p>
+<p>If you go to the folder you created, you will see your project with blue hexagon R doodle and .Rproj extension (mine is called COOLWeb.Rproj because I named my project COOLWeb). When you open that file, you will be back to wherever you left off without bothering to open your files one by one. You will see all of the files we opened in the last tutorial: <strong>config.toml</strong>, <strong>languages.toml</strong>, <strong>menus.toml</strong>, <strong>params.toml</strong></p>
+<p align="center">
+<img src="/img/6_filelocation.png">
+</p>
+<p>The greatness of using &ldquo;projects&rdquo; is not just that you don’t have to bother opening individual files again. It's also great because whatever you create within the project will be saved in the project folder. If you send your project folder to somebody else, they do not need to change anything in your code. This is why it is not recommended that you use <strong>setwd(&ldquo;a path on YOUR computer&rdquo;)</strong> to change your directory. This function requires a path on your  computer. When you send your codes to somebody else, they have to manually change that path. So, avoid using setwd() as much as possible.</p>
+<p>This tutorial is also about getting familiar with R so let's talk some more about the projects. What if this was not a website-building project but something else, like data analysis, writing a book, writing an article or both data analysis and writing a book. You can follow the same steps we had: from the menu <code>File -&gt; New Project</code>. Instead of creating a blogdown website project, you will create a normal project.</p>
+<h3 id="back-to-our-coolweb">Back to Our COOLWeb</h3>
+<p>Please run the serve_site() function again to see your website in the viewer.</p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="n">blogdown</span><span class="o">::</span><span class="nf">serve_site</span><span class="p">(</span><span class="p">)</span>
+</code></pre></div><p>We had three files open: <strong>languages.toml</strong>, <strong>menus.toml</strong>, <strong>params.toml</strong>.</p>
+<p>Don't change anything in <strong>languages.toml</strong> if you want your website in English but this is where you would go if you wanted to use a different language.</p>
+<p><strong>menus.toml</strong> contains the navigation links of the example website. If you go to the menu of your website in progress, you can see what they look like. You should decide on how many sections you need, how you want to name them and the order in which they appear. As it is written in the explanation, <strong>weight</strong> determines the order that the links appear. These weights are simply ascending numbers, but it’s good to leave space between the numbers so you can add sections later. That's why the examples are multiples of ten.  Play with the names and order. For example, write 41 to Post's weight. It will appear after Publication in the menu.</p>
+<p><img src="/img/6_menus.png" alt=""></p>
+<p>Your website uses built-in WIDGETS. They are ready-to-use designs that you can easily employ. For example, look at the Experience section in the example webpage. All you need is to enter your information from your CV and tell the program use the <em>experience</em> widget. More about WIDGETS coming soon!</p>
+<p>In <strong>menus.toml</strong>, notice the difference in Course's url. Unlike the url for Courses, the other urls have <strong>#</strong> in front of their parameters and do not have / after. The # indicates that those links target somewhere on the homepage. For example, click Posts on the website. It will show you the Posts section on the homepage. On the other hand, when you click Courses, it opens a new page. I mentioned this difference in a previous tutorial and now you will learn how to create those links.</p>
+<p>It is all about urls in <strong>menus.toml</strong>. Using # in front of the link parameter creates a path to <code>content/home/</code> in your directory. Take a look at <code>content/home/</code>. You will see posts.md file (we will talk about .md extension in the next lesson).</p>
+<p>In <strong>menus.toml</strong>, url = &ldquo;#posts&rdquo; refers to posts.md file inside <code>content/home/</code>.</p>
+<p><img src="/img/6_menus2.png" alt=""></p>
+<p>Well, url = &ldquo;courses/&rdquo; refers to <code>content/courses/</code>. In short, if you want a separate page, then you need to create a new folder within the <code>content</code> folder. Let's try. There is also <code>content/post/</code> (See the figure). Why don't you write url = &ldquo;post/&rdquo; instead of url = &ldquo;#posts&rdquo;. Save the file and you will see that Posts in the menu will open a new page.</p>
+<p>Don't worry about filling those sections with your content at this time. For now, you can organize your sections and choose how they will be displayed on your website.</p>
+<p>NEXT: <strong>GLAM TIME!</strong></p>
+<p align="center">
+<img src="https://media.giphy.com/media/gfYXvjYB3ROSLpNo2D/giphy.gif">
+</p>
+
+</div>
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <center>
+<footer class="site-footer">
+  
+
+<p class="powered-by">
+    © Deniz Çivril, 2020 &middot; 
+
+    Made with <a href="https://github.com/denizCvrl" target="_blank" rel="noopener">GitHub</a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"> R </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the
+    <a href="https://themes.gohugo.io/hugo-whisper-theme/" target="_blank" rel="noopener">Whisper theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+  </p>
+</footer>
+<center>
+
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+
+</body>
+
+</html>

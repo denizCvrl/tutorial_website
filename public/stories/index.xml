@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Send your stories on Making a Website with R and the Blogdown Package</title>
+    <link>/stories/</link>
+    <description>Recent content in Send your stories on Making a Website with R and the Blogdown Package</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Deniz Çivril, {year}</copyright>
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate>
+    
+	<atom:link href="/stories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deniz Çivril</title>
+      <link>/stories/01-deniz-civril/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/stories/01-deniz-civril/</guid>
+      <description>Coming Soon!</description>
+    </item>
+    
+    <item>
+      <title>Clinton Merck</title>
+      <link>/stories/02-clinton-merck/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/stories/02-clinton-merck/</guid>
+      <description>Clint&#39;s own experience</description>
+    </item>
+    
+  </channel>
+</rss>

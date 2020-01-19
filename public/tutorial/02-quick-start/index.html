@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Lesson 2 - A Quick Start - Making a Website with R and the Blogdown Package</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.cf61ee4b2512be758a62a9e3ecdd36ae306ccce0c3309bc3ac4b547e8475a418.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-stories">
+      <a href="/stories">
+        <span>Stories</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tutorial">
+      <a href="/tutorial">
+        <span>Tutorial</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img alt="Logo" src="/images/icon-512.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Logo" src="/images/icon-32.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-stories">
+      <a href="/stories">
+        <span>Stories</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tutorial">
+      <a href="/tutorial">
+        <span>Tutorial</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Tutorial</h4>
+  <ul>
+    
+    <li class="">
+      <a href="/tutorial/01-install-blogdown/">Lesson 1 - Install Blogdown</a>
+    </li>
+    
+    <li class="active ">
+      <a href="/tutorial/02-quick-start/">Lesson 2 - A Quick Start</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/03-menu/">Lesson 3 - Menu of Your Website</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/04-themes-colors-fonts/">Lesson 4 - Themes, Colors, Fonts</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/05_widgets_part1/">Lesson 5 - Widgets Part I</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/06_widgets_part2/">Lesson 6 - Widgets Part II</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/07_archetypes_part1/">Lesson 7 - Archetypes Part 1</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/08_archetypes_part2/">Lesson 8 - Archetypes Part 2</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/09_hints/">Lesson 9 - Some Hints</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/10_netlify/">Lesson 10 - Netlify</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/11_git_part1/">Lesson 11 - Git Part 1</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/12_git_part2/">Lesson 12 - Git Part 2</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/13_github/">Lesson 13 - GitHub</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+ <div class="article-container">
+<h1 class="title">Lesson 2 - A Quick Start</h1>
+<div class="content ">
+  <p>In this lesson, you will build the example site of the academic theme. Later, we will modify the elements of this website. Our aim is to teach you the structure of folders so that you can apply a similar logic while using other themes.</p>
+<h2 id="lets-build-a-website-section-12-and-13-in-the-manual">Let's Build a Website (Section 1.2 and 1.3 in the Manual)</h2>
+<p><a href="https://bookdown.org/yihui/blogdown/">The blogdown manual</a> describes two ways to begin creating a website: either by writing a command on the console (<strong>blogdown::new_site()</strong>) or by choosing blogdown website option from the menu. For its simplicity, we will follow the second method 😄 <code>File -&gt; New Project -&gt; New Directory -&gt; Website using blogdown</code>. If you don't see this option, try restarting your R session (cmd/ctrl + shift + F10).</p>
+<p><img src="/img/3_creatingwebsite.gif" alt=""></p>
+<p>First, provide a name for your project under <strong>Directory name</strong>. This is not the name of your website, just the name of the R project.  Since you are learning how to make a very cool website, I am calling it &ldquo;COOLWeb&rdquo; 😅. Choose a subdirectory if you want, otherwise leave it as it is (your project will be probably under <code>Documents</code>, you can check it with <strong>getwd()</strong>).</p>
+<p>Second, we installed Hugo in the previous lesson, so it is okay to uncheck that option if you completed the first lesson (we installed it in the first lesson because it was a nice opportunity to introduce functions)😉.</p>
+<p>Third, you will see <a href="https://themes.gohugo.io/hugo-lithium-theme/">lithium</a> as a theme. We will use <a href="https://themes.gohugo.io/academic/">academic theme</a> in this tutorial. Paste gcushen/hugo-academic into the Hugo theme line and click &ldquo;Create Project&rdquo;. The documentation of the academic theme is massive. It also has relatively more options to modify your website.</p>
+<p align="center">
+<img src="/img/4_academictheme.png">
+</p>
+<p>A side note: I realize that you may prefer another theme. But, I think we should try to understand the logic of the blogdown package (and how to use R) first. Then you can play around with other themes if you want. If you just have to use another theme, be aware that two potential issues that might arise. First, not every theme has been tried with the blogdown package, so you might have compatibility issues. Second, although the logic is the same, file names or file paths might be different in each theme, which could get confusing in later sections of this tutorial.</p>
+<p>Another side note: Notice that you now have four panels in R! 😄.</p>
+<p>Now, you can see the files blogdown created at the right bottom corner of RStudio. They are all saved automatically in the directory you selected for your website projects. These are the files needed to make this example website: <a href="https://themes.gohugo.io//theme/academic/">https://themes.gohugo.io//theme/academic/</a>.</p>
+<p align="center">
+<img src="/img/5_files.png">
+</p>
+<p>I find it incredibly frustrating to have so many files and not know what they are for, so I am going to review as many of them as possible throughout this tutorial to help you understand their functions (well, at least as far as I know and understand them). We will discuss many of the files in more detail later on, but here is a quick introduction:</p>
+<ul>
+<li>
+<p><strong>config.toml</strong> and <strong>config folder</strong>: These are involved in setting certain global options and the appearance of your website.</p>
+</li>
+<li>
+<p><strong>content folder</strong>: This one is kind of obvious. It's the folder that stores your original content. Before moving on, I want to provide some important structural information about this folder and how it relates to the website. Follow along with steps below.</p>
+<ol>
+<li>If you look at the menu bar at the top of <a href="https://themes.gohugo.io//theme/academic/">the example website</a>, you will see Demo, Posts, Projects, Publications, Courses and Contact as the options.</li>
+<li>Clicking on any of these options, except Courses, will land you into a different section of the homepage. Click <code>Projects</code> to see what I mean. Courses, on the other hand, opens a new page.</li>
+<li>Now, click on <code>content</code> folder under Files on RStudio (See the figure above). You will see a number of folders: authors, courses, home, post, projects, publication, etc.</li>
+<li>For now, just focus on <strong>home</strong> and <strong>courses</strong>. The <strong>home</strong> folder consists of files that create the homepage of the website.</li>
+<li>All options in the menu bar of the example website (except Courses, of course) refer to a file present in <code>content/home</code>. That's why they all land into homepage.</li>
+<li>Courses, on the other hand, refers to <code>content/courses</code> and thus opens a new page when clicked.</li>
+</ol>
+<p>Later on, we will talk about how to create links and organize  these folders/files, but it is important to simply understand the structure of these folders before we get to all that.</p>
+</li>
+<li>
+<p><strong>static folder</strong>: Some static files, such as your profile photo, will be kept here.</p>
+</li>
+<li>
+<p><strong>themes folder</strong>: This folder stores the codes to set up the theme of your website. We are using the <strong>academic theme</strong>. The config.toml and files in the config folder take the theme information from this <strong>themes</strong> folder. <strong>YOU WILL NOT CHANGE ANYTHING IN THIS FOLDER EVER! ⛔ 💥</strong></p>
+</li>
+</ul>
+<p>Okay, we can now create the example website using another function from the blogdown package. Type the following function into the R console (By the way, do you remember why we need the package name in fron of a function? If not, see the previos lesson):</p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="n">blogdown</span><span class="o">::</span><span class="nf">serve_site</span><span class="p">(</span><span class="p">)</span>
+</code></pre></div><p>While you are typing, R gives you the possible package and function options. You can use up and down arrow to choose the ones you want instead of typing all the way, if you want.</p>
+<p align="center">
+<img src="/img/4_options.gif">
+</p>
+<ul>
+<li><strong>public folder</strong>: When you hit the enter, the mobile version of the example website will be rendered in the viewer window (or the normal website in your browser). This action will create the public folder. Hugo renders our content and theme, and put everything in this folder. Similar to the themes folder, YOU WON'T BE CHANGING ANYTHING ⛔ 💥 in the public folder. This is the folder I meant in the introduction of the tutorial 😉.</li>
+</ul>
+<p><img src="/img/4_examplewebsite.gif" alt=""></p>
+<p>Let's talk about <strong>config.toml</strong> that is already open at the left corner. Information in <strong>config.toml</strong> sets some global parameters of your website. You migh be wondering about what that toml extension is in the name. It is an acronym for &ldquo;Tom's Obvious, Minimal Language&rdquo;, a configuration file format that consists of <code>key = &quot;value&quot;</code> pairs. For example, the very first pair in config.toml sets the title of your website: <code>title = Academic</code>. You can create a toml file from <code>File -&gt; New File -&gt; Text File</code> and naming the file with toml extension. You do not need to create one for this tutorial though.<br>
+Let’s play around a bit to see how we can begin to change the information on website. Notice the red notes in the console. These notes indicate that whenever you make a change in your website, you will be able to see the changes right away. Let's see if this is the case by modifying <strong>config.toml</strong>.</p>
+<p>Write your name instead of Academic in title and type <code>&amp;copy; YOUR NAME, {year}</code> for copyright.</p>
+<p>title = &ldquo;Academic&rdquo;</p>
+<p>copyright = &quot; &quot;</p>
+<p><img src="/img/5_changetitle.gif" alt=""></p>
+<p>As soon as you save the config.toml, your website will be reloaded with the changes and you will see your name as the title! If you go to the end of the site, you will see a copyright on your name. Go ahead and try! 😏</p>
+<p>Now, you have two options for how you view updates to your website as you work on it:</p>
+<ol>
+<li>
+<p>If you think that it is unnecessary to see changes each time you save a file, you can simply follow one of the instructions in the red note: <strong>run servr::daemon_stop(&ldquo;number&rdquo;) or restart your R session</strong> (cmd/ctrl + shift + F10). Then, whenever you want to view all of yourchanges, use <strong>blogdown::serve_site()</strong> function AGAIN to see the latest version of your website. Follow the instructions again if you want to stop updating. (Shortcut: Use up-and-down arrows from your keyboard in order to bring the codes you already wrote on the console.)</p>
+</li>
+<li>
+<p>If you like tracking your changes as you make them, then you're all set! Just be sure to use serve_site() function again each time you restart your R session. (Tip: You can also see a desktop version of your website in your browser from the address of the local server. What address? It is there in the red notes, it starts with <code>__http://__</code>. Mine is <code>http://127.0.0.1:4321/</code>. Paste that address into a browser to view your website in all of its glory!)</p>
+</li>
+</ol>
+<p>FYI: Out of curiosity I ran <strong>serve_site()</strong> function for the second time without restarting my session and the website automatically opened in my browser. Then, things got complicated. It started to show my changes only in the browser version. I ran it a third time, fourth time&hellip; Occasionally, I was able to see changes both in my browser and in the viewer, but other times only in the browser. I am not sure if this is a bug, or there is some kind of logic I couldn't figure out. Anyways, I might need to update this information in the future, but I wanted to warn you. Ultimately, if you are seeing your updates either in the viewer or in the browser, you are good to go.</p>
+<p>You will probably see another function in other tutorials or in the manual: <strong>blogdown::build_site()</strong>. You can either write this code to the console or use the panel in RStudio at the right corner and click Build Website to call <strong>blogdown::build_site()</strong> function. I want to discuss the difference between <strong>serve_site()</strong> and <strong>build_site()</strong>. In <strong>config.toml</strong> there is <code>baseurl=&quot;/&quot;</code> in between title and copyright. When you have your own website address, you will enter the address in this key. I will show you how to get a website address later on in this tutorial. However, let's assume I already have <code>baseurl=&quot;https://denizc.com/&quot;</code>. <strong>build_site()</strong>  creates paths that includes this full address. For example, if I had a page referring courses folder, the path would be <code>https://denizc.com/courses.</code>   <strong>serve_site()</strong>, on the other hand, creates paths referring to local files in your computer. In my case, the local path is <code>http://http://127.0.0.1:4321/</code> and so the path for the course folder is <code>http://http://127.0.0.1:4321/courses</code>. We will use <strong>serve_site()</strong> until we need <strong>build_site()</strong>.^[It is more advanced stuff for now but if you are interested, <a href="https://bookdown.org/yihui/blogdown/">the blogdown manual</a> has some explanations in Section 1.3 where it says &ldquo;see Section D.3 for details&rdquo;]</p>
+<p>The rest of code in <strong>config.toml</strong> might appear overwhelming at first (hang in there - you can do this!), but some of the code is, in fact, rather self-explanatory. Consider &ldquo;enableEmoji&rdquo;, which determines if you allow using emojis on the website, and defaultContentLanguage, which sets the language (see, coding's not ao bad). For now, let's just keep everything as it is. We will come back and change a couple of things later on in this tutorial (if nothing else, at least baseurl).</p>
+<p>Now go to the <code>config/_default</code> folder (the default folder is in the config folder) back in the Files section of R session and open all three files: <strong>languages.toml</strong>, <strong>menus.toml</strong>, <strong>params.toml</strong>. The next lesson will explain what these files for and further explain the <strong>config folder</strong>, but you have already learned a lot in this lesson. You deserve a break!</p>
+<p>Before we finish, I just want you to check where your project is located on your computer (if you don't already know, use getwd()).</p>
+<p>Mine is in <code>C:/Users/DC/Documents/COOLWeb</code>. You should have something similar. Once you know exactly where your project is located, simply close the R window. There is NO need to close each file or section, just close the big window.</p>
+<p>You might be feeling a bit overwhelmed after this exhausting R session. All of these codes and files and paths can be intimidating, but I assure you that you do not need to be a master programmer to get through this tutorial and build a beautiful website. So, to lighten the mood and help you wind down, here is one of my all-time favorite sketches that I found extremely relevant. Right now, you might feel like the monk asking for help, but soon you will feel more like the medieval helpdesk! Enjoy, and see you next time!</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/pQHX-SjgQvQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+</div>
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <center>
+<footer class="site-footer">
+  
+
+<p class="powered-by">
+    © Deniz Çivril, 2020 &middot; 
+
+    Made with <a href="https://github.com/denizCvrl" target="_blank" rel="noopener">GitHub</a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"> R </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the
+    <a href="https://themes.gohugo.io/hugo-whisper-theme/" target="_blank" rel="noopener">Whisper theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+  </p>
+</footer>
+<center>
+
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+
+</body>
+
+</html>

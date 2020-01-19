@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Lesson 1 - Install Blogdown - Making a Website with R and the Blogdown Package</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.cf61ee4b2512be758a62a9e3ecdd36ae306ccce0c3309bc3ac4b547e8475a418.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-stories">
+      <a href="/stories">
+        <span>Stories</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tutorial">
+      <a href="/tutorial">
+        <span>Tutorial</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img alt="Logo" src="/images/icon-512.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Logo" src="/images/icon-32.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-stories">
+      <a href="/stories">
+        <span>Stories</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tutorial">
+      <a href="/tutorial">
+        <span>Tutorial</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Tutorial</h4>
+  <ul>
+    
+    <li class="active ">
+      <a href="/tutorial/01-install-blogdown/">Lesson 1 - Install Blogdown</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/02-quick-start/">Lesson 2 - A Quick Start</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/03-menu/">Lesson 3 - Menu of Your Website</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/04-themes-colors-fonts/">Lesson 4 - Themes, Colors, Fonts</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/05_widgets_part1/">Lesson 5 - Widgets Part I</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/06_widgets_part2/">Lesson 6 - Widgets Part II</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/07_archetypes_part1/">Lesson 7 - Archetypes Part 1</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/08_archetypes_part2/">Lesson 8 - Archetypes Part 2</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/09_hints/">Lesson 9 - Some Hints</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/10_netlify/">Lesson 10 - Netlify</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/11_git_part1/">Lesson 11 - Git Part 1</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/12_git_part2/">Lesson 12 - Git Part 2</a>
+    </li>
+    
+    <li class="">
+      <a href="/tutorial/13_github/">Lesson 13 - GitHub</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+ <div class="article-container">
+<h1 class="title">Lesson 1 - Install Blogdown</h1>
+<div class="content ">
+  <p>You need both R and RStudio IDE.  R is a programming language for statistical computing and graphics while R Studio is an integrated development environment (IDE) that provides a user-friendly platform. One can develop R programs more easily and efficiently with R Studio.</p>
+<h3 id="packages-and-functions-in-r">Packages and Functions in R</h3>
+<p>Install R first (<a href="http://www.r-project.org/">http://www.r-project.org/</a>) and then RStudio (<a href="http://www.rstudio.com/">http://www.rstudio.com/</a>).</p>
+<p>For R, go to its website and click on <a href="https://cran.r-project.org/mirrors.html">download R</a>, you will see a list of countries with many links. As instructed, choose a location close to you and follow the directions for your operating system. (Or you can also find a YouTube video that demonstrates the installation process. It depends on your operating system so I am leaving you to find one).</p>
+<p>For RStudio, <a href="https://rstudio.com/products/rstudio/download/">download</a> Free Desktop version and again follow the steps for your operating system.</p>
+<p>If you already have those programs installed, I am assuming that they are up-to-date, otherwise you might have some problems below.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>When you are all set, open RStudio. If this is the first time ever you are using RStudio: when you click on RStudio icon, you'll see the 3 panels depicted below.</p>
+<p><img src="/img/1_intro.gif" alt=""></p>
+<p>Write the code below to your Console and hit enter to see what your current wd (<em>WORKING DIRECTORY</em>) is.</p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="nf">getwd</span><span class="p">(</span><span class="p">)</span>
+</code></pre></div><p>This means if you create a file and save it, it will be saved to this working directory. We can easily change whatever that directory is but let’s keep it as it is for now and go back to building our website with the blogdown package.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<h3 id="whats-blogdown">What’s Blogdown?</h3>
+<p>R has built-in and user-written functions. For example, <strong>getwd()</strong> is a function that asks R to give current directory information. When a group of functions are bundled together, they are called a <strong>package</strong>. Blogdown is one of these packages and it makes it much easier to prepare a website. Let's first learn how to install a package.</p>
+<h3 id="installation-of-a-package-blogdown-section-11-in-the-manual">Installation of a package: Blogdown (Section 1.1 in the manual)</h3>
+<p>There are two ways to install a package:</p>
+<ol>
+<li>install.packages(&ldquo;&lt;the package's name&gt;&rdquo;): type this code to the console with the package name you want, in our case <strong>blogdown</strong>. This function takes the package from its source on the web and installs it to your computer (it’s enough to do this just once on a single computer or device).</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="nf">install.packages</span><span class="p">(</span><span class="s">&#34;</span><span class="s">blogdown&#34;</span><span class="p">)</span> 
+</code></pre></div><ol start="2">
+<li>The alternative way is to go to <strong>packages</strong>, choose <strong>install</strong>, type the name of the package and click install!</li>
+</ol>
+<p><img src="/img/2_blogdown.gif" alt=""></p>
+<h3 id="libraries">Libraries</h3>
+<p>The package is installed to your computer but you also need to <strong>call</strong> it to your session. In other words, you need to activate the package so it can be used in this session. While the installation of a package needs to be done just once on a single computer or device, calling packages to your session has to be done whenever you open a new session.</p>
+<p>I like to think that each package consists of a team of minions who are resting in my computer, waiting to be called to action. Each team is in charge of performing certain tasks. Installing packages adds new teams of minions to my computer (yay!), and calling packages lets the minions know which teams will be working on today’s projects. Since packages have be to called for each R session, we always start new sessions by letting our minions know to get ready to go to work!</p>
+<p align="center">
+<img src="https://media.giphy.com/media/6NOQuy1P6vF4s/giphy.gif">
+</p>
+<p>Now, let’s call our installed blogdown package so we can use it in this project. The command to load a package to your session is <strong>library()</strong>. For the blogdown package:</p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">blogdown</span><span class="p">)</span>
+</code></pre></div><p>Write this to your console and hit the enter. Your team is ready to work!</p>
+<p align="center">
+<img src="http://giphygifs.s3.amazonaws.com/media/10S4rk0J10AKlO/giphy.gif">
+</p>
+<p>Now that you have the package in your computer, and you have called it to your session, you can deploy any function (minion 😄) from <strong>the blogdown package</strong>. It is like asking one of the minions in the team to do a certain task.</p>
+<p>One of these functions is <strong>install_hugo()</strong>. Who is HUGO? What is HUGO?</p>
+<p>Hugo is a static site generator. Althought it's not a perfect analogy, building a website in R is kind of like making a cake: you mix eggs, flour, milk, and baking soda, then bake it in the oven. Hugo is like the oven. You create your content and pick a template, and Hugo renders (bakes!) them into an html website. You don't even need to code in html! Of course you are responsible for your content but fortunately for us, some super nice people have created website templates that you can use for free. Here are selections: <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>. In order to use these templates, we need to install Hugo. The blogdown package has a function called <strong>install_hugo</strong>.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="n">blogdown</span><span class="o">::</span><span class="nf">install_hugo</span><span class="p">(</span><span class="p">)</span>
+</code></pre></div><p>If you are a keen observer, you may be wondering why we have the package name, <strong>blogdown::</strong>, in front of our function name? This is just a way to tell R <strong>where</strong> to look for the install_hugo() function. Including the package name before the function is not always necessary, and you will likely not want to write this out every time you use a function, but there are a couple of reasons to do so:</p>
+<ul>
+<li>
+<p>Although we already loaded the blogdown package with  <strong>library()</strong>, we need to be careful when using functions from this package. There might be functions with the same names from different packages (like minions with the same names from different teams). For example, assume that there is another package called Postdown with a function called install_hugo. If you load both packages, it could result in unexpected (and aggravating) errors. In that case, it is safer to indicate the package name in front so that R know which one you inted to use.</p>
+</li>
+<li>
+<p>You can skip loading the blogdown package with <strong>library()</strong> altogether when you write the package name in front of a function. This is the case in <a href="https://bookdown.org/yihui/blogdown/">the blogdown manual</a>. It doesn't mention using library() at all so that <strong>blogdown::</strong> accompanies each function mentioned in the manual. When you analyze a dataset, you use multiple functions from multiple packages. In that case, it is not practical to write package name for every single function. In this tutorial, we will skip loading the blogdown package like the manual and use <strong>blogdown::</strong> in front of each function.</p>
+</li>
+</ul>
+<p>Well, I hope this was a helpful explanation of the installation and usage of packages and functions in R 😜.</p>
+<p>Installation? DONE! Now, let’s move forward with building our website!</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Since you have the programs I assume you know how to install packages so you can follow <a href="https://uvastatlab.github.io/phdplus/installR.html#updateR">these instructions</a> to update your programs. If you don't know what &ldquo;package&rdquo; means then it is better to uninstall everything and update to the latest versions. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>You can manually set your working directory using <strong>setwd(&ldquo;a path on your computer&rdquo;)</strong>. However, it is not a very popular function. I will comment more on that later, but if you are curious and are already somewhat familiar with R, I suggest <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">this famous post</a> by <a href="https://jennybryan.org/">Jenny Bryan</a>. For future reference, I also suggest <a href="https://kdestasio.github.io/post/r_best_practices/">this blog post</a> by <a href="https://kdestasio.github.io/">Krista L. Destasio</a> about best practices with R. You will discover the practices that work best for you as you gain more experience with R. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>There are other static site generators like Jekyll with different templates but they are not very compatible with blogdown. There are ways to solve the compatibility problem but, if you are a beginner, it's better to keep it simple! 😄 <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+</div>
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <center>
+<footer class="site-footer">
+  
+
+<p class="powered-by">
+    © Deniz Çivril, 2020 &middot; 
+
+    Made with <a href="https://github.com/denizCvrl" target="_blank" rel="noopener">GitHub</a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"> R </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the
+    <a href="https://themes.gohugo.io/hugo-whisper-theme/" target="_blank" rel="noopener">Whisper theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+  </p>
+</footer>
+<center>
+
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+
+</body>
+
+</html>
