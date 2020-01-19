@@ -64,7 +64,7 @@ library(blogdown)
 Write this to your console and hit the enter. Your team is ready to work!
 
 <p align="center">
-<img src="http://giphygifs.s3.amazonaws.com/media/10S4rk0J10AKlO/giphy.gif">
+<img src="https://media.giphy.com/media/10S4rk0J10AKlO/source.gif">
 </p>
 
 Now that you have the package in your computer, and you have called it to your session, you can deploy any function (minion :smile:) from __the blogdown package__. It is like asking one of the minions in the team to do a certain task. 
