@@ -12,9 +12,9 @@ Install R first (<http://www.r-project.org/>) and then RStudio (<http://www.rstu
 
 For R, go to its website and click on [download R](https://cran.r-project.org/mirrors.html), you will see a list of countries with many links. As instructed, choose a location close to you and follow the directions for your operating system. (Or you can also find a YouTube video that demonstrates the installation process. It depends on your operating system so I am leaving you to find one). 
 
-For RStudio, [download](https://rstudio.com/products/rstudio/download/) Free Desktop version and again follow the steps for your operating system.  
+For RStudio, [download](https://rstudio.com/products/rstudio/download/) Free Desktop version and again follow the steps for your operating system.[^1]  
 
-If you already have those programs installed, I am assuming that they are up-to-date, otherwise you might have some problems below.[^1]  
+If you already have those programs installed, I am assuming that they are up-to-date, otherwise you might have some problems below.[^2]  
 
 When you are all set, open RStudio. If this is the first time ever you are using RStudio: when you click on RStudio icon, you'll see the 3 panels depicted below. 
 
@@ -25,7 +25,7 @@ Write the code below to your Console and hit enter to see what your current wd (
 ```r 
 getwd()
 ```
-This means if you create a file and save it, it will be saved to this working directory. We can easily change whatever that directory is but let’s keep it as it is for now and go back to building our website with the blogdown package.[^2]
+This means if you create a file and save it, it will be saved to this working directory. We can easily change whatever that directory is but let’s keep it as it is for now and go back to building our website with the blogdown package.[^3]
 
 ### What’s Blogdown? 
 
@@ -71,7 +71,7 @@ Now that you have the package in your computer, and you have called it to your s
 
 One of these functions is __install_hugo()__. Who is HUGO? What is HUGO?
 
-Hugo is a static site generator. Althought it's not a perfect analogy, building a website in R is kind of like making a cake: you mix eggs, flour, milk, and baking soda, then bake it in the oven. Hugo is like the oven. You create your content and pick a template, and Hugo renders (bakes!) them into an html website. You don't even need to code in html! Of course you are responsible for your content but fortunately for us, some super nice people have created website templates that you can use for free. Here are selections: <https://themes.gohugo.io/>. In order to use these templates, we need to install Hugo. The blogdown package has a function called __install_hugo__.[^3]
+Hugo is a static site generator. Althought it's not a perfect analogy, building a website in R is kind of like making a cake: you mix eggs, flour, milk, and baking soda, then bake it in the oven. Hugo is like the oven. You create your content and pick a template, and Hugo renders (bakes!) them into an html website. You don't even need to code in html! Of course you are responsible for your content but fortunately for us, some super nice people have created website templates that you can use for free. Here are selections: <https://themes.gohugo.io/>. In order to use these templates, we need to install Hugo. The blogdown package has a function called __install_hugo__.[^4]
 
 ```r 
 blogdown::install_hugo()
@@ -87,9 +87,12 @@ Well, I hope this was a helpful explanation of the installation and usage of pac
 
 Installation? DONE! Now, let’s move forward with building our website!
 
-[^1]:Since you have the programs I assume you know how to install packages so you can follow [these instructions](https://uvastatlab.github.io/phdplus/installR.html#updateR) to update your programs. If you don't know what "package" means then it is better to uninstall everything and update to the latest versions. 
+[^1]: If you want to read more about installing R and RStudio, see 
+<https://www.r-bloggers.com/how-to-install-r-and-rstudio/>.
 
-[^2]: You can manually set your working directory using __setwd("a path on your computer")__. However, it is not a very popular function. I will comment more on that later, but if you are curious and are already somewhat familiar with R, I suggest [this famous post](https://www.tidyverse.org/articles/2017/12/workflow-vs-script/) by [Jenny Bryan](https://jennybryan.org/). For future reference, I also suggest [this blog post](https://kdestasio.github.io/post/r_best_practices/) by [Krista L. Destasio](https://kdestasio.github.io/) about best practices with R. You will discover the practices that work best for you as you gain more experience with R. 
+[^2]:Since you have the programs I assume you know how to install packages so you can follow [these instructions](https://uvastatlab.github.io/phdplus/installR.html#updateR) to update your programs. If you don't know what "package" means then it is better to uninstall everything and update to the latest versions. 
 
-[^3]: There are other static site generators like Jekyll with different templates but they are not very compatible with blogdown. There are ways to solve the compatibility problem but, if you are a beginner, it's better to keep it simple! :smile:
+[^3]: You can manually set your working directory using __setwd("a path on your computer")__. However, it is not a very popular function. I will comment more on that later, but if you are curious and are already somewhat familiar with R, I suggest [this famous post](https://www.tidyverse.org/articles/2017/12/workflow-vs-script/) by [Jenny Bryan](https://jennybryan.org/). For future reference, I also suggest [this blog post](https://kdestasio.github.io/post/r_best_practices/) by [Krista L. Destasio](https://kdestasio.github.io/) about best practices with R. You will discover the practices that work best for you as you gain more experience with R. 
+
+[^4]: There are other static site generators like Jekyll with different templates but they are not very compatible with blogdown. There are ways to solve the compatibility problem but, if you are a beginner, it's better to keep it simple! :smile:
 
