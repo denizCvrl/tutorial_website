@@ -102,7 +102,7 @@ __Default__ option, on the other hand,  gives you a template for a post similar 
 
 ![](/img/19_archetype1.png)
 
-I was wondering if this method could be used to create other types of content for my website. So, I tried selecting other options from the Archetype dropdsown menu, hoping that it would have similar templates to those in other folders of the example website (`content/publication/`, `content/projects/`, etc). Nope, that didn’t work!
+I was wondering if this method could be used to create other types of content for my website. So, I tried selecting other options from the Archetype dropdown menu, hoping that it would have similar templates to those in other folders of the example website (`content/publication/`, `content/projects/`, etc). Nope, that didn’t work!
 
 Then I realized that it's because of the structure of `themes/hugo-academic/archetypes/`, which is where these template files are present. The templates are there, but are located in their respective folders as index.md. Home and Default options work because they are not in separate folders (see the image below). 
 
