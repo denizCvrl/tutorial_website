@@ -11,7 +11,9 @@ From this point on, you will want to choose the path that best suits you. You ma
 
 ### Creating Content
 
-Please go to your __menus.toml__ and change url="#posts" to url="post/"   so that it will create a new page from the `content/post/` folder  instead of landing on the homepage (`home/posts.md`). Publish your website locally using blogdown::serve_site() and then click Posts on the menu in order to see the page created.
+Please go to your __menus.toml__ and change url="#posts", which refers to `home/posts.md`, to url="post/", which is the `content/post/` folder. Be careful with the "s". You should write the name of the folder in `content/`. This change will create a new page from the `content/post/` folder instead of landing on the homepage (`home/posts.md`). 
+
+Publish your website locally using blogdown::serve_site() and then click Posts on the menu in order to see the page created.
 
 <p align="center">
 <img src="/img/18_blog0a.png">
@@ -88,7 +90,7 @@ The automatically created path might be a problem because it includes the title 
   posts = "/:year/:month/:day/:slug/"
 
 ```
-As you might notice, this means you should provide a “slug” for each post you create. The slug will remain consistent even if you change your post title, ensuring that the links to the post will remain consistent as you update titles. Beyond that, it is up to you how to design your posts' links. For example, personally I like `post` in the path  so that one can understand from the link that the entry is under post on my website:
+As you might notice, this means you should provide a “slug” for each post you create. The slug will remain consistent even if you change your post title, ensuring that the links to the post will remain consistent as you update titles. Beyond that, it is up to you how to design your posts' links. For example, personally I like `post` in the path so that one can understand from the link that the entry is under post on my website:
 
 ```r 
 # Permalinks
@@ -98,7 +100,7 @@ As you might notice, this means you should provide a “slug” for each post yo
 
 ### What's Archetype?
 
-In the drop-down menu of __Archetype__ in the new post window, you have many options: default, docs, home, post, project, publication, slides, and talk. They are content template files with preconfigured front matter. Since we already covered the `content/home/` folder, let me explain what preconfigured front matter is by comparing __default__ and __home__ options. 
+In the drop-down menu of __Archetype__ in the new post window, you have many options: default, docs, home, post, project, publication, slides, and talk. They are content template files with preconfigured front matter. You can read what archetype or front matter is from the website of Hugo <https://gohugo.io/content-management/archetypes/> but let me explain using two different archetypes in the academic theme. We already covered the `content/home/` folder and you already used two different preconfigured front matter: __default__ and __home__. 
 
 __Home__ option creates a template that you can use for a widget. While we were managing widgets in the home folder, we copied and pasted .md files  to create new widgets . Well, you could also go to Addins, choose New Post and then select __home__ as an archetype.
 
@@ -172,6 +174,7 @@ options(
 ```
 
 Here’s a brief explanation of each of the options in the code above:
+
 - servr.deamon: Do you remember it from the second lesson? You can turn it off if you want by turning TRUE to FALSE (I tried and it didn't work. Maybe it is related to the new updates! I want to keep it on anyway!). 
 - blogdown.author: So that you do not have to write your name each time you post something.
 - blogdown.ext: You can set Rmd as default if you want. 
