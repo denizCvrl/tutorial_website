@@ -7,9 +7,19 @@ weight: 10
 
 This lesson will include an ongoing list of small changes I make to my website over time. I am hoping to add to this section as I go along. And if you discover any tips/tricks that might be helpful for others, please let me know and I can add them to this section! 
 
+### Keeping up with the updates
+
+If you are using the academic theme, you can follow the updates from <https://sourcethemes.com/academic/updates/v4.7.0/>. Why do you need this?
+For example, if you need to update the version of Hugo, it can create some compatibility issues. These issues are resolved in the newer versions of the academic theme. However, if you have the old version of the academic theme, you might need some patch codes. 
+
+In my case, for example, I had the BlackFriday setting. See the updates under “Breaking Changes” on <https://sourcethemes.com/academic/updates/v4.7.0/>. I followed the instructions to be able to use Hugo versions higher than 0.60.0.
+
+Don’t panic. You will notice if something is wrong and most probably somebody has already solved the problem :wink:.  
+
+
 ### Changing the website icon
 
-If you notice, the academic theme's icon appears in web browser tab (see the image below). You can use your own icon but you need to save three different sizes in `assets/images/`.
+If you notice, the academic theme's icon appears in web browser tab (see the image below). You can use your own icon but you need to save it in `assets/images/`.
 
 ![](/img/24_icon.png)
 
