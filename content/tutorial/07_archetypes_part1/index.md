@@ -75,6 +75,11 @@ The program will automatically create a path for you using your title: `/SUBDIRE
 
 ### Some Advanced Stuff I:
 
+<p align="center">
+<img src="https://media.giphy.com/media/KwuWvVnOUdVx6/giphy.gif">
+</p>
+
+
 The automatically created path might be a problem because it includes the title of your post. If you change your title later, and somebody still has the previous link, they will not be able to reach your post. [2.2.2 Options](https://bookdown.org/yihui/blogdown/configuration.html#) of [the blogdown manual](https://bookdown.org/yihui/blogdown/) suggests setting up permalinks in __config.toml__ by adding:
 
 ```r 
@@ -111,6 +116,10 @@ Then I realized that it's because of the structure of `themes/hugo-academic/arch
 Remember that you are not supposed to change anything in `themes/hugo-academic/`! So, I created a folder called `archetypes/` at the root of my side (directly in my “COOLWeb ” folder). Then, I copied and pasted the index.md files into this folder and renamed them with their respective types. You are good to go after these steps  ! Also, feel free to make some custom changes to your archetypes :wink:. The next lesson will go over these steps again! 
 
 ### Some Advanced Stuff II:
+
+<p align="center">
+<img src="https://media.giphy.com/media/xkRM2IPKao58s/source.gif">
+</p>
 
 There are some caveats in creating blog posts. With the current settings, you should save all images under `static/` folder. This is not optimal, especially if you have multiple images in one post. Also, it is so against the nature of programming if you have to enter your name each and every time you write a post. 
 
