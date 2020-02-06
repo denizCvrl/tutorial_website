@@ -36,6 +36,7 @@ Another option is to request a `*.rbind.io` domain name from <https://GitHub.com
   <img src="/img/25_deploy2.png">
   </p>
 
+If you go with a `*.rbind.io` domain name, it is better to redirect HTTP traffic to HTTPS. If you don't know the difference, go ahead and read about it from [the wikipedia](https://en.wikipedia.org/wiki/HTTPS). That's what I did! :smile: For example, let's assume your website address is `coolweb.rbind.io`. When you request this address, The rbind team assigns you both `http://coolweb.rbind.io` and `https://coolweb.rbind.io`. The TLS certificate (having that `s` in the http) is obtained via Cloudware. Now you have three addresses: the one with the netlify, another with http and one other with https. Simply create a file called `_redirect` and save under the `static/` folder. Redirect all of the urls to the one with https. See this [blog](https://yihui.org/en/2017/11/301-redirect/) from [Yihui Xie](https://yihui.org/) for examples. 
 
 __2. Using Git and GitHub, and then Netlify:__ If you are hoping to update your website frequently, it is better to host it on GitHub and tell Netlify to pull your website info from GitHub. For this option, you need to choose "New site from Git" (See the figure above). This option will be explained in detail after you learn how to use Git and GitHub in the next lessons. 
 
