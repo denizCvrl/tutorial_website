@@ -63,7 +63,7 @@ Open a terminal (MacOS) or a “Git Bash” shell (Windows).
 
   + Since Git hasn't started to track any file yet in our project, all of them have <img src="/img/git-untracked.png" width="25px" height="25px">.
       
-  + Tracking starts with a __Commit__, which takes a snapshot of your content at a specific point in time, allowing you to go back to that point if necessary. It is probably not efficient to commit every single change, so you will be the judge of which ones are crucial. You might think it is safe to record every single step, but it might be hard to find what you are looking for later and you might regret of so many unnecessary commits.
+  + Tracking starts with a __Commit__, which takes a snapshot of your content at a specific point in time, allowing you to go back to that point if necessary. It is probably not efficient to commit every single change, so you will be the judge of which ones are crucial. You might think it is safe to record every single step, but it might be hard to find what you are looking for later and you might regret so many unnecessary commits.
     
       <p align="center">
       <img src="https://media.giphy.com/media/OWJILXs8QpyiA/giphy.gif">
