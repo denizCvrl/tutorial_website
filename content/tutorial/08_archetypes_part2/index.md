@@ -1,13 +1,13 @@
 ---
 date: "2019-02-11T19:27:37+10:00"
 draft: false
-title: Lesson 8 - Archetypes Part 2
+title: Lesson 8 - Archetypes Part II
 weight: 9
 ---
 
 This lesson goes over each archetype one by one. If you understand Lesson 7 perfectly, feel free to skip this one. Otherwise, this is a nice recap of the previous lesson with more details.  
 
-Let's remember the available options we have and how they appear in `themes/hugo-academic/archetypes/`. As discussed before, you can find some templates under their respective folders. For those templates, choosing archetypes from the New Post window doesn't produce the expected result. I solved this problem by moving some things around in our directory. You might not need these adjustments in the newer version of the academic theme. Also, you might have other archetypes in addtion to the ones listed below.   
+Let’s remember the available options we have and how they appear in `themes/hugo-academic/archetypes/`. As discussed before, you can find some templates under their respective folders. For those templates, choosing archetypes from the New Post window didn’t produce the expected result. I solved this problem by moving some things around in our directory. By the way, you might not need these adjustments in the newer version of the academic theme. Also, you might have other archetypes in addition to the ones listed below.   
 
 ![](/img/19_archetype2.png)
 
@@ -34,7 +34,7 @@ Open the `/archetypes/project.md` file to see explanations of your options and w
 
 - `Addins -> New Post`, subdirectory = publication, archetype = publication. 
 
-Preconfigured front matter for publication lists more options. Open the `/archetypes/publication.md` file to see explanations of your options. Do you see the *featured* parameter? That's to be used in the featured widget, which you may remember from way back!
+Preconfigured front matter for publication lists more options. Open the `/archetypes/publication.md` file to see explanations of your options. Do you see the *featured* parameter? That’s to be used in the featured widget, which you may remember from way back!
 
 ![](/img/22_publication.png)
 
@@ -46,7 +46,7 @@ Preconfigured front matter for publication lists more options. Open the `/archet
 
 - `Addins -> New Post`, subdirectory = slides, archetype = slides.
 
-For the slides, you have parameters for themes and highlighting. Follow the instructions for your options. 
+For the slides, you have parameters for themes and highlighting. Follow the instructions for your options. Notice that there is a separate folder for your slides: `content/slides/`. You can create your presentations using slides archetype, save it under `content/slides/`, and then refer it in some other place in your webpage. For example, see the "slides" option in the publication archetype.     
 
 ![](/img/23_slides.png)
 
@@ -61,7 +61,6 @@ For the slides, you have parameters for themes and highlighting. Follow the inst
 
 ![](/img/24_talk.png)
 
-
 ### Docs
 
 docs.md in `themes/hugo-academic/archetypes/` is not located inside a folder so you do not need to do anything with it. This archetype is great for courses/tutorials and you can see some examples in `/content/courses/`. As usual, if you want to see the content of this folder, you can simply change your menu and use blogdown::serve_side(). 
@@ -70,12 +69,10 @@ In a course or tutorial, you usually want to create multiple pages with table of
 
 ![](/img/24_docs.png)
 
-By the way, don't forget to change the name of your documentation folder. It took some time for me to figure this out! In the figure above, for instance, I need to rename "example" to "2019-12-15-newcourse".
+By the way, don’t forget to change the name of your documentation folder. It took some time for me to figure this out! In the figure above, for instance, I need to rename "example" to "2019-12-15-newcourse".
 
-To be honest, I haven't yet figured out how to use .Rmd files in this format. I will explore docs more if I need it, but for now I am just using .md files. If you want, you can start exploring docs now by reading [the part about HTML documents](https://bookdown.org/yihui/rmarkdown/html-document.html) from the R Markdown book.     
+To be honest, I haven’t yet figured out how to use .Rmd files in this format. I will explore docs more if I need it, but for now I am just using .md files. If you want, you can start exploring docs now by reading [the part about HTML documents](https://bookdown.org/yihui/rmarkdown/html-document.html) from the R Markdown book.     
 
-
-That's ALL for the folders in `content/`. 
+That’s ALL for the folders in `content/`. 
 
 By now I hope that you have your website setup with some or all of your own content! We will cover how to publish it in the next lessons.   
-

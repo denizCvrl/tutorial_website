@@ -5,7 +5,7 @@ title: Lesson 9 - Some Hints
 weight: 10
 ---
 
-This lesson will include an ongoing list of small changes I make to my website over time. I am hoping to add to this section as I go along. And if you discover any tips/tricks that might be helpful for others, please let me know and I can add them to this section! 
+This lesson includes some small changes I made to my website. If you discover easy tips/tricks that might be helpful for others and do not require too much coding, please let me know and I can add them to this section! 
 
 ### Keeping up with the updates
 
@@ -15,14 +15,13 @@ For example, if you need to update the version of Hugo, it can create compatibil
 
 In my case, for example, I had the BlackFriday setting. See the updates under “Breaking Changes” on <https://sourcethemes.com/academic/updates/v4.7.0/>. I followed the instructions to be able to use Hugo versions higher than 0.60.0.
 
-Don’t panic. You will notice if something is wrong and it's very likely that somebody has already solved the problem :wink:.  
+Don’t panic. You will notice if something is wrong and it’ very likely that somebody has already solved the problem :wink:.  
 
 ### Changing the website icon
 
-If you notice, the academic theme's icon appears in web browser tab (see the image below). You can use your own icon but you need to save it in `assets/images/`.
+If you notice, the academic theme’s icon appears in web browser tab (see the image below). You can use your own icon but you need to save it in `assets/images/`.
 
 ![](/img/24_icon.png)
-
 
 Please follow the instruction in <https://sourcethemes.com/academic/docs/customization/#website-icon>.
 
@@ -43,13 +42,26 @@ The academic theme has a lot of options, which means there are a lot of code fil
  
 Although it requires some html knowledge, I want to show you an example of how to change simple things. If you open site_footer.html, you will see that it is the code that takes the copyright information you initially entered in config.toml in the beginning of this tutorial. You can change the text here if you want. 
 
-But, remember not to edit anything in `themes/hugo`!!! You should copy the file to the folder you created in the root - `layouts/partials/site_footer.html` - and make the desired changes to the copied file.
+But, remember not to edit anything in `themes/hugo-academic/`!!! You should copy the file to the folder you created in the root - `layouts/partials/site_footer.html` - and make the desired changes to the copied file.
 
 <p align="center">
 <img src="/img/24_site_footer.png">
 </p>
 
-If you know html coding, or if you have somebody who can help you with it, you can modify the codes as you wish. For example, you can modify the appearance of the navigation bar from navbar.html.
+If you know html coding, or if you have somebody who can help you with it, you can modify the codes as you wish. For example, I want my profile photo on the right instead of on the left. I modified about.html and saved it under the `layouts/partials/widgets` folder.
+
+### Adding social accounts to the menu
+If you want, you can add icons for your social account to the menu. An example is:  
+
+[[main_right]]
+  name = "<i class=\"fab fa-twitter\" style=\"font-size: 1rem; line-height: 1.25\"></i>"
+  post = ""
+  url = "https://twitter.com/denizcvrl?lang=en"
+  weight = 20
+
+### Advanced custom settings
+
+If you want some major modifications about design, the codes are in `themes/hugo-academic/assets/scss/`. You need to create a path `assets/scss/` in your main directory and save modified specifications in a file called custom.scss. I think the best way to learn is to look at others codes from github and learn how they make their changes. Be careful though! Everything is linked to another. Changing a small thing sometimes affects the appearance of the whole page. 
 
 ### Other themes
 
@@ -64,6 +76,4 @@ If you know html coding, or if you have somebody who can help you with it, you c
   ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 ```
 
-
-- If you cannot see the images, it is probably related to the paths. Look at the example website of each theme to be sure that you are writing it correctly. For example, in the academic theme, we didn't need to write the full path for the image files in the static folder. This might not be the case for the other themes.
-
+- If you cannot see your images, it is probably related to the paths. Look at the example website of each theme to be sure that you are writing it correctly. For example, in the academic theme, we didn’t need to write the full path for the image files in the static folder. This might not be the case for the other themes.

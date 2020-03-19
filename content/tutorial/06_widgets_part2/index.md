@@ -15,17 +15,15 @@ Once again, the code that determines the type of widget and the order of appeara
 
 As you can see from the notes in __about.md__, author = "admin" uses information from `content/authors/`, in which you can find the "admin" folder. You have two files inside `content/authors/admin`: avatar.jpg and \_index.md. And now we have found what we are looking for! \_index.md is for the text part of the __about__ widget and avatar.jpg is for the image. 
 
-For your own website, you need to modify the information in \_index.md and save your own photo as avatar.jpg. Or, if you want, you can create a new folder under `content/authors/`, name it whatever you want, let's say OWNER. Save your avatar.jpg, copy \_index.md and modify for yourself. Then, write author = "OWNER" in about.md.[^1]
-
+For your own website, you need to modify the information in \_index.md and save your own photo as avatar.jpg. Or, if you want, you can create a new folder under `content/authors/`, name it whatever you want, let’s say OWNER. Save your avatar.jpg, copy \_index.md and modify for yourself. Then, write author = "OWNER" in __about.md__ in `content/home/`.
 
 ![](/img/13_about.png)
 
-By the way, for those of you who don't know, Nelson Bighetti is a character known as Big Head in The Silicon Valley of HBO :joy:.
+By the way, for those of you who don’t know, Nelson Bighetti is a character known as Big Head in The Silicon Valley of HBO :joy:.
 
 <p align="center">
 <img src="https://media.giphy.com/media/3og0IMdYUfEyYOqIZW/giphy.gif">
 </p>
-
 
 Looking again at `content/authors/admin/`, I want to take your attention to the "social" part in \_index.md. The "fab" icon pack appears here again (we mentioned packs in Lesson 4), from which we get the icons and link them to the addresses of our own profiles in various social media websites.  
 
@@ -33,7 +31,7 @@ You migh notice the link for "envelope" is '#contact'. We have exactly the same 
 
 ### contact.md
 
-Open __contact.md__ which locates at `content/home`. As you can understand from weight = 130, it appears toward the end of our homepage and, in fact, if you check the homepage, you see the form to send an email and other contact information. Once again, there is almost nothing in the code :confused:.  
+Open __contact.md__ which locates at `content/home`. As you can understand from weight = 130, it appears toward the end of our homepage and, in fact, if you check the homepage of the example website, you see the form to send an email and other contact information. Once again, there is almost nothing in the code :confused:.  
 
 <p align="center">
 <img src="/img/14_contact.png">
@@ -81,7 +79,7 @@ Does that make any sense to you? It didn’t make much sense to me until I saw t
 
 ![](/img/17_publication.png)
 
-One more thing about __publications.md__: Have you noticed the alert note at the end? It states: "Quickly discover relevant content by filtering publications". We had an alert note in demo.md too. Similar to the gallery element, the alert note is also written between two curly brackets. Even though you do not necessarily know coding in html, you can just copy-and-paste the codes, change the content and use in another index.md file.   
+One more thing about __publications.md__: Have you noticed the alert note at the end? It states: "Quickly discover relevant content by filtering publications". We had an alert note in demo.md too. Similar to the gallery element, the alert note is also written between two curly brackets. Even though you do not necessarily know coding in html, you can just copy-and-paste the codes, change the content and use in another index.md file :wink:.   
 
 ### tags.md
 
@@ -103,18 +101,18 @@ WIDGETS, UNDERSTOOD! HOMEPAGE, DONE!
 
 ### Creating a New Widget Page
 
-Assume that you want to use a widget in a separate page, not on the homepage. All you need to do is to declare that your page will be a widget page in the front matter of an index.md. Let's try. 
+Assume that you want to use a widget in a separate page, not on the homepage. All you need to do is to declare that your page will be a widget page in the front matter of an index.md. Let’s try. 
 
  1. Create a new folder in the `content/` folder: I named mine EXPERIENCE.
  2. Create a new file, `File-> New File -> Text File`, and  save it as `index.md`. Copy(Cut)-and-paste experience.md from the home folder to the EXPERIENCE folder.  
  3. In the index.md file, declare that this page is a widget_page.
- 4. Don't forget to create an item in `menu.toml`.
+ 4. Don’t forget to create an item in `menu.toml`.
 
 <p align="center">
 <img src="/img/17_widgetpage.png">
 </p>
 
-You can create really cool pages with widgets. For example, I used blank widget (demo.md) below and deleted all of the text but title. Besides experience.md, I also added accomplishments.md.
+You can create really cool pages with widgets. For example, I used 2 blank widgets (demo.md) below. I deleted all of the text but title: one is titled "Experience" (demo1.md) and the other Accomplishments (demo2.md). I copied and pasted both experience.md and accomplishments.md from the `content/home` folder.
 
 <p align="center">
 <img src="/img/17_widgetpage.gif">
@@ -123,13 +121,10 @@ You can create really cool pages with widgets. For example, I used blank widget 
 How about widget pages for projects, publications? 
 
 - Similarly, create a separate folder in `content/` with its index.md file which has type = widget_page. 
-- Let's say the name of the this folder is PROJECTWIDGET. Create a link for this folder in the menu.toml.
+- Let’s say the name of the this folder is PROJECTWIDGET. Create a link for this folder in the menu.toml.
 - Copy(Cut)-and-paste the __projects.md__ file from the home folder. 
 - Remember that this file has page_type="project" (see above). It means that it lists the content of `content/project/`. 
 
-In summary, your menu refers to PROJECTWIDGET folder which has projects.md, and projects.md uses files present in `content/project/`. They are all linked to each other!
+In summary, your menu refers to `content/PROJECTWIDGET` folder which has index.md and projects.md files, and projects.md uses files present in `content/project/`. They are all linked to each other!
 
 NEXT: OTHER FOLDERS UNDER `content/`.
-
-[^1]: Why would we need a separate folder? Let's assume you are preparing this website for a lab and you want to use ABOUT widget for your lab members. Then you can create multiple folders under `content/authors/`. Let's say ADMIN, MEMBER1, MEMBER2 with their own \_index.md files and avatars. Then you can have three separate files that use ABOUT widget: about1.md, about2.md, about3.md in `content/home/`. Each refers to different folder and you can arrange the order of appearance from the weight parameter. It doesn't have to be on the homepage. Do you want it to be in a separate page? Create a new folder under `content/` and refer it from your __menus.toml__. Don't forget to include index.md with type = "widget_page". If you don't know what I am talking about, go back to Bill Murray's entrance to the theatre in lesson 5 of this tutorial to remember what index file is! Also see "Creating a New Widget Page" part of this lesson. The more you learn about widgets, the more creative you will be.     
-
